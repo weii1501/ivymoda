@@ -217,3 +217,10 @@ ul.menu li.red-text>a {
     right: 10px;
     top: -10px;
 }
+
+
+/* main css */
+.site-main {
+    border-bottom: 1px solid #D1D2D4;
+    margin-top: 80px;
+}
