@@ -1,0 +1,16 @@
+.left-menu {
+  background-color: yellow;
+  text-align: center;
+}
+
+.left-menu li {
+  list-style: none;
+  display: inline-block;
+  font-size: 15px;
+  padding: 10px;
+}
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
