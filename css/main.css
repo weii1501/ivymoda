@@ -196,6 +196,7 @@ ul.menu li.red-text>a {
 }
 
 .search-form .fa-magnifying-glass {
+    color: #6C6D70;
     font-family: 'icomoon' !important;
     speak: never;
     font-style: normal;
@@ -216,6 +217,66 @@ ul.menu li.red-text>a {
     font-weight: 400;
     font-size: 12px;
     padding-left: 40px;
+    outline: none;
+}
+
+.quick-search {
+    /* display: none; */
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    border: 1px solid #E7E8E9;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 24px 24px 16px;
+    width: 440px;
+    /* left: 35px; */
+    text-align: left;
+    top: 20px;
+    z-index: 9;
+    transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.search-form > input:focus-visible + .quick-search {
+    display: block !important;
+    opacity: 1;
+    visibility: visible;
+    top: 50px;
+}
+
+.quick-search .item-searchs > h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    color: #221F20;
+    margin-bottom: 16px;
+}
+
+.item-searchs .item-side-size .item-sub-list {
+    max-width: unset;
+    width: auto;
+    margin-right: 8px;
+}
+
+.item-searchs .item-side-size .item-sub-title {
+    padding: 8px 12px;
+}
+
+.item-side-size .item-sub-title {
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 16px;
+    padding: 8px 0;
+    color: #6C6D70;
+    display: block;
+    border: 1px solid #E7E8E9;
+    border-radius: 8px 0px;
 }
 
 .header-actions {
@@ -1055,3 +1116,27 @@ div.swiper-slide {
         transform: translateY(0);
     }
 }
+
+@keyframes fade_in_show_top {
+    0% {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fade_out_show_top {
+    0% {
+        opacity: 1;
+        transform: translateY(-20%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+
