@@ -19,6 +19,102 @@
 <body>
     <!-- header -->
     <header id="header" class="site-header">
+        <div class="sub-action sub-action-cart">
+            <div class="top-action">
+                <div type="button" class="btn-close" onclick="closeCart()">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <h3>
+                    Giỏ hàng
+                </h3>
+                <span class="number-cart">2</span>
+            </div>
+
+            <div class="main-action">
+                <!-- item cart -->
+                <div class="item-product-cart d-flex">
+                    <div class="thumb-product-cart">
+                        <img src="./assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg" alt="" class="lazy">
+                    </div>
+
+                    <div class="info-product-cart">
+                        <h3>
+                            <a href="#">
+                                Lealia Blazer - Áo blazer nhung trơn
+                            </a>
+                        </h3>
+                        <div class="info-properties d-flex">
+                            <p class="properties-color">Màu sắc: <span style="color: #000;">Đen</span></p>
+                            <p>Size: <span style="text-transform: uppercase">m</span></p>
+                        </div>
+                        <div class="info-price-mini d-flex">
+                            <div class="info-price-quantity d-flex">
+                                <div class="price-quantity-minus price-quantity">
+                                    <i class="fa-solid fa-minus"></i>
+                                </div>
+                                <input type="number" value="1" data-product-sub-id="186719" data-product-index="0">
+                                <div class="price-quantity-plus price-quantity">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="price-cart-mini">
+                                <ins>
+                                    <span>
+                                        1.862.000₫                             
+                                    </span>
+                                </ins>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item cart -->
+                <div class="item-product-cart d-flex">
+                    <div class="thumb-product-cart">
+                        <img src="./assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg" alt="" class="lazy">
+                    </div>
+
+                    <div class="info-product-cart">
+                        <h3>
+                            <a href="#">
+                                Lealia Blazer - Áo blazer nhung trơn
+                            </a>
+                        </h3>
+                        <div class="info-properties d-flex">
+                            <p class="properties-color">Màu sắc: <span style="color: #000;">Đen</span></p>
+                            <p>Size: <span style="text-transform: uppercase">m</span></p>
+                        </div>
+                        <div class="info-price-mini d-flex">
+                            <div class="info-price-quantity d-flex">
+                                <div class="price-quantity-minus price-quantity">
+                                    <i class="fa-solid fa-minus"></i>
+                                </div>
+                                <input type="number" value="1" data-product-sub-id="186719" data-product-index="0">
+                                <div class="price-quantity-plus price-quantity">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="price-cart-mini">
+                                <ins>
+                                    <span>
+                                        1.862.000₫                             
+                                    </span>
+                                </ins>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-action">
+                <!-- <input type="hidden" name="total_price_not_format" value="5158000"> -->
+                <div class="total-price">Tổng cộng: <strong>5.158.000đ</strong></div>
+                <div class="box-action">
+                    <a href="#" class="action-view-cart">Xem giỏ hàng</a>
+                    <a href="#" class="action-login">Đăng nhập</a>
+                </div>
+            </div>
+        </div>
         <div class="container d-flex">
             <nav class="main-menu">
                 <!-- nav -->
@@ -454,10 +550,10 @@
                     </div>
 
                     <div class="item item-cart">
-                        <a class="icon" href="#">
+                        <div type="button" class="icon" href="#" onclick="openCart()">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <span class="number-cart">5</span>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
