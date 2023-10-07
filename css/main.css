@@ -250,6 +250,10 @@ ul.menu li.red-text>a {
     top: 50px;
 }
 
+.item-searchs {
+    margin-bottom: 16px;
+}
+
 .quick-search .item-searchs > h4 {
     font-weight: 600;
     font-size: 16px;
@@ -289,6 +293,7 @@ ul.menu li.red-text>a {
 .header-actions .item {
     width: 16px;
     margin-right: 10px;
+    position: relative;
 }
 
 .header-actions .item>a {
@@ -303,10 +308,77 @@ ul.menu li.red-text>a {
     margin-right: 20px;
 } 
 
+.header-actions .item div>i {
+    color: #6C6D70;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
 .header-actions .icon {
     font-size: 16px;
     color: #000;
     position: relative;
+}
+
+.header-actions .sub-action {
+    /* display: none; */
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: #FFF;
+    z-index: 2;
+    border: 1px solid #E7E8E9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: max-content;
+    min-width: 255px;
+    text-align: left;
+    transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.5);
+    transform-origin: 100% 0%;
+}
+
+.header-actions .sub-action.active {
+    /* display: block; */
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transform-origin: 100% 0%;
+}
+
+.top-action {
+    padding: 24px 24px 20px;
+    position: relative;
+    border-bottom: 1px solid #F7F8F9;
+    margin-bottom: 24px;
+}
+
+.sub-action h3 {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+    color: #221F20;
+}
+
+.sub-action ul {
+ padding: 0 24px;
+}
+
+.sub-action ul li a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #808285;
+    margin-bottom: 24px;
+    display: block;
 }
 
 .number-cart {
@@ -421,6 +493,7 @@ ul.menu li.red-text>a {
 
 /* home banner */
 .home-banner {
+    overflow: hidden;
     margin-bottom: 42px;
     border-top-left-radius: 80px;
     border-bottom-right-radius: 80px;
@@ -464,10 +537,7 @@ div.swiper-slide {
 }
 
 .item-banner {
-    border-top-left-radius: 80px;
-    border-bottom-right-radius: 80px;
     overflow: hidden;
-    /* height: 450px; */
     width: 100%;
 }
 
