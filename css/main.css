@@ -1561,7 +1561,7 @@ div.swiper-slide {
 }
 
 .item-zoom img {
-    object-fit: cover;
+    object-fit: contain;
     height: 100%;
     width: 100%;
 }
@@ -1800,6 +1800,7 @@ div.swiper-slide {
     border-radius: 16px 0px;
     padding-left: 20px;
     font-weight: 100;
+    outline: none;
 }
 
 .product-detail__quantity .product-detail__quantity-input .product-detail__quantity--increase, .product-detail__quantity .product-detail__quantity-input .product-detail__quantity--decrease {

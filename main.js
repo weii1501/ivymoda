@@ -20,6 +20,13 @@ function closeCart() {
 let zoom = document.querySelector('.item-zoom');
 let imgZoom = document.getElementById('imgZoom');
 let view = document.querySelectorAll('.product-gallery__slide .product-gallery__slide--small img');
+let sizeElement = document.querySelectorAll('.product-detail__size label span');
+let sizeElementActive = document.querySelector('.product-detail__size label span.active');
+let qualityInput = document.querySelector('.product-detail__quantity .product-detail__quantity-input input');
+let btnDecrease = document.querySelector('.product-detail__quantity .product-detail__quantity-input .product-detail__quantity--decrease');
+let btnIncrease = document.querySelector('.product-detail__quantity .product-detail__quantity-input .product-detail__quantity--increase');
+let tabItem = document.querySelectorAll('div.tab-item');
+let tabContent = document.querySelectorAll('div.tab-content');
 
 zoom.addEventListener('mousemove', (e) => {
     imgZoom.style.opacity = 1;
@@ -75,5 +82,40 @@ view.forEach((item) => {
         img.setAttribute('src', e.target.currentSrc);
         imgZoom.setAttribute('src', e.target.currentSrc);
         console.log(img);
+    });
+});
+
+sizeElement.forEach((item) => {
+    item.addEventListener('click', function (e) {
+        sizeElementActive.classList.remove('active');
+        e.target.classList.add('active');
+        sizeElementActive = e.target;
+    });
+});
+
+btnDecrease.addEventListener('click', function (e) {
+    if (qualityInput.value > 1) {
+        qualityInput.value--;
+    }
+});
+
+btnIncrease.addEventListener('click', function (e) {
+    qualityInput.value++;
+});
+
+tabItem.forEach((item, index) => {
+    item.addEventListener('click', function (e) {
+        document.querySelector('.tab-item.active').classList.remove('active');
+        if (e.target.classList.contains('tab-item')) {
+            e.target.classList.add('active');
+        }
+        document.querySelector('.tab-content.active').classList.remove('active');
+        tabContent[index].classList.add('active');
+
+        let imgUp = document.querySelector('.show-more .img-up');
+        if (imgUp) {
+            document.querySelector('.show-more .img-up').classList.add('hidden');
+            document.querySelector('.show-more .img-down.hidden').classList.remove('hidden');
+        } 
     });
 });
