@@ -2098,6 +2098,10 @@ img.hidden {
     position: relative;
 }
 
+.cart__table tr td:nth-child(3) {
+    width: 10%;
+}
+
 .cart__list .cart__table th:first-child, .cart__list .cart__table td:first-child, .cart__list--attach .cart__table--attach th:first-child, .cart__list--attach .cart__table--attach td:first-child {
     text-align: left;
     width: auto;
@@ -2401,6 +2405,10 @@ input[type=number] {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
+}
+
+.pt-4, .py-4 {
+    padding-top: 1.5rem!important;
 }
 
 
