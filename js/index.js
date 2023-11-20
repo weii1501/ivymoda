@@ -107,7 +107,6 @@ openAddtoCartSizeArr.forEach((openAddtoCartSize, index) => {
                 
                 listSize[index].classList.remove('open');
                 
-
                 const total = cart.reduce((total, item) => {
                     return total + item.price * item.quantity;
                 }, 0);
