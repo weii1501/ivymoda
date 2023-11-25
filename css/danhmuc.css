@@ -1,4 +1,31 @@
 .container-category {
   position: relative;
-  top: 100px;
+  top: 80px;
+  border: 1px solid red !important;
+  margin: 10px 80px;
+}
+
+.heading-category {
+  font-size: 13px;
+  /* border: 1px solid blue; */
+  padding: 20px 0px;
+  border-top: 1px solid rgb(189, 189, 189);
+  border-bottom: 1px solid rgb(189, 189, 189);
+}
+.heading-category span {
+  margin: 0px 5px;
+  color: rgba(0, 0, 0, 0.73);
+  font-size: 15px;
+}
+
+.main-category {
+  display: flex;
+}
+
+.left-container {
+  flex: 20%;
+  border: 1px solid rgb(255, 255, 0);
+}
+.right-container {
+  flex: 80%;
 }
