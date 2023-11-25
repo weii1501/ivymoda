@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IVAMODA</title>
     <link rel="stylesheet" href="../../css/main.css" />
-    <link rel="stylesheet" href="../../css/danhmuc.css" />
+    <link rel="stylesheet" href="../../css/datHang.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="../css/fontawesome-free-6.4.2-web/css/all.css" />
@@ -19,6 +19,11 @@
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
   <body>
@@ -561,29 +566,167 @@
     </header>
 
     <!--------category-->
-    <div class="container-category">
-      <p class="heading-category text-muted">
-        Trang chủ <span> &#8211; </span> <span>ÁO</span> &#8211; <span>Áo sơ mi</span>
-      </p>
-      <div class="main-category">
-        <!---Left-danh muc-->
-        <div class="left-container"></div>
-        <div class="right-container">
-          <section id="intro">
-            <!-- <div class="row justify-content-center align-items-center">
-              <div class="col-md-5 text-center text-md-start">
-                <div class="display-2">Black-belt</div>
-                <p class="display-5 text-muted">Your coding skill</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#pricing" class="btn btn-secondary btn-lg">Buy now</a>
+    <div class="container__order">
+      <div class="container__order-left">
+        <div class="box__status">
+          <p class="experiment-text">gio hang</p>
+        </div>
+        <div class="content__order">
+          <div class="content__order-left">
+            <div class="content__order-left-element">
+              <h3 class="content__order-title">Địa chỉ giao hàng</h3>
+              <button class="content__order-login">ĐĂNG NHẬP</button>
+              <button class="content__order-signUp">ĐĂNG Ký</button><br />
+              <p class="content__order-msg">
+                Đăng nhập/ Đăng ký tài khoản để được tích điểm và nhận thêm nhiều ưu đãi từ IVY
+                moda.
+              </p>
+              <div class="form-container">
+                <h3>
+                  <span> <i class="fa fa-check-circle" aria-hidden="true"></i> </span>Địa chỉ
+                </h3>
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" placeholder="Họ và Tên" />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" placeholder="Số điện thoại" />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <select id="city" class="form-control">
+                      <option value="" selected disabled value="-1">Tỉnh/ thành phố</option>
+                      <option value="">Hồ chí Minh</option>
+                      <option value="">Hà Nội</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <select id="district" class="form-control">
+                      <option selected disabled value="-1">Quận huyện</option>
+                      <option value="">Hồ chí Minh</option>
+                      <option value="">Hà Nội</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <select id="ward" class="form-control">
+                      <option selected disabled value="-1">Phường Xã</option>
+                      <option value="">Hồ chí Minh</option>
+                      <option value="">Hà Nội</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Địa chỉ" />
+                  </div>
+                </div>
               </div>
-              <div class="col-md-5 text-center d-none d-md-block">
-                <img class="" src="../../assets/img/danhmuc/ebook-cover.png" alt="#sach" />
+            </div>
+          </div>
+          <div class="content__order-right">
+            <div class="content__order-right-element">
+              <h3 class="content__order-title">Phương thức giao hàng</h3>
+              <div class="content__order-box">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <span class="order-box-text">Chuyển phát nhanh</span>
               </div>
-            </div> -->
-          </section>
+              <h3 class="content__order-right-msg-vat">Bạn có muốn nhận hoá đơn VAT không ?</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container__order-right">
+        <div class="cart-summary">
+          <div class="box_product_total">
+            <div class="cart-summary__overview">
+              <h3>Tóm tắt đơn hàng</h3>
+              <div class="cart-summary__overview__item">
+                <p>Tổng tiền hàng</p>
+                <p>3.140.000đ</p>
+              </div>
+              <div class="cart-summary__overview__item">
+                <p>Tạm tính</p>
+                <p>2.198.000đ</p>
+              </div>
+              <div class="cart-summary__overview__item">
+                <p>Phí vận chuyển</p>
+                <p>38.000đ</p>
+              </div>
+              <div class="cart-summary__overview__item">
+                <p>Tiền thanh toán</p>
+                <p>2.236.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="cart-summary__voucher-form__title d-flex justify-content-between">
+            <h4 class="active">Mã phiếu giảm giá</h4>
+            <span></span>
+            <h4 class="myVocher">Mã của tôi</h4>
+          </div>
+          <p id="coupon" style="padding-top: 5px; text-align: center; display: none"></p>
+          <div class="row cart_coupon">
+            <div class="form-group col-md-8">
+              <input type="text" class="form-control" placeholder="Họ và Tên" />
+            </div>
+            <div class="form-group col-md-4">
+              <button class="btn btn-outline-dark">Áp Dụng</button>
+            </div>
+            <div class="form-group">
+              <select name="" id="">
+                <option value="" selected>Mã nhân viên hỗ trợ</option>
+                <option value="">SA1</option>
+                <option value="">SA2</option>
+                <option value="">SA3</option>
+              </select>
+            </div>
+          </div>
+          <div class="cart-summary__button-bot">
+            <button class="btn btn-lg">Hoàn thành</button>
+          </div>
         </div>
       </div>
     </div>
+
+    <!---   JS cho chọn phường xã-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script>
+      var citis = document.getElementById("city");
+      var districts = document.getElementById("district");
+      var wards = document.getElementById("ward");
+      var Parameter = {
+        url: "https://raw.githubusercontent.com/kenzouno1/DiaGioiHanhChinhVN/master/data.json",
+        method: "GET",
+        responseType: "application/json",
+      };
+      var promise = axios(Parameter);
+      promise.then(function (result) {
+        renderCity(result.data);
+      });
+
+      function renderCity(data) {
+        for (const x of data) {
+          citis.options[citis.options.length] = new Option(x.Name, x.Id);
+        }
+        citis.onchange = function () {
+          district.length = 1;
+          ward.length = 1;
+          if (this.value != "") {
+            const result = data.filter((n) => n.Id === this.value);
+
+            for (const k of result[0].Districts) {
+              district.options[district.options.length] = new Option(k.Name, k.Id);
+            }
+          }
+        };
+        district.onchange = function () {
+          ward.length = 1;
+          const dataCity = data.filter((n) => n.Id === citis.value);
+          if (this.value != "") {
+            const dataWards = dataCity[0].Districts.filter((n) => n.Id === this.value)[0].Wards;
+
+            for (const w of dataWards) {
+              wards.options[wards.options.length] = new Option(w.Name, w.Id);
+            }
+          }
+        };
+      }
+    </script>
   </body>
 </html>
