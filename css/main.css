@@ -58,6 +58,14 @@ ul {
     list-style: none !important;
 }
 
+a, button, input {
+    transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -2494,5 +2502,112 @@ input[type=number] {
     padding-top: 1.5rem!important;
 }
 
+.banner-policy {
+    margin-bottom: 40px;
+}
 
+.img-banner-look {
+    border-radius: 80px 0px;
+    /* overflow: hidden; */
+}
+
+.img-banner-look img {
+    display: block;
+    border-radius: 0 0 80px 0;
+    overflow: hidden;
+    object-fit: contain;
+    width: 100%;
+}
+
+.side-bar {
+    border: 1px solid #E7E8E9;
+    border-radius: 32px 0px;
+    padding: 40px;
+    max-width: 420px;
+    width: 100%;
+    height: max-content;
+}
+
+.side-bar li a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6C6D70;
+    margin-bottom: 32px;
+    display: inline-block;
+}
+
+.side-bar li:hover a, .side-bar li.active a {
+    color: #221F20;
+}
+
+.main-rules .title-policy {
+    margin-bottom: 28px;
+}
+
+.main-complaints .title-policy {
+    margin-bottom: 68px;
+}
+
+
+.title-policy {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #221F20;
+    text-transform: uppercase;
+}
+
+.main-policy {
+    width: calc( 100% - 420px );
+    padding-left: 30px;
+}
+
+.main-policy .content-policy {
+    max-width: 1050px;
+    width: 100%;
+}
+
+.main-rules .content-policy h3, .main-rules .content-policy h4, .main-rules .content-policy h5 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #221F20;
+    margin-bottom: 10px;
+}
+
+.main-policy .content-policy h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #221F20;
+    margin-bottom: 18px;
+}
+
+.main-rules .content-policy p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6C6D70;
+    margin-bottom: 8px;
+}
+
+.main-policy .content-policy p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #6C6D70;
+    margin-bottom: 16px;
+}
+
+.content-policy .height-32 {
+    height: 32px;
+}
+
+.content-policy .height-8 {
+    height: 8px;
+}
+
+.content-policy .height-24 {
+    height: 24px;
+}
 

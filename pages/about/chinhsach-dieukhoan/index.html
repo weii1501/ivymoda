@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IVAMODA</title>
+    <link rel="stylesheet" href="../../../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../../../css/fontawesome-free-6.4.2-web/css/all.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.css" />
+</head>
+<body>
+        <!-- header -->
+    <header id="header" class="site-header">
+        <div class="sub-action sub-action-cart">
+            <div class="top-action">
+            <div type="button" class="btn-close" onclick="closeCart()">
+                <i class="fa-solid fa-x">x</i>
+            </div>
+            <h3>Giỏ hàng</h3>
+            <span class="number-cart">0</span>
+            </div>
+    
+            <div class="main-action">
+            <!-- item cart -->
+            <!-- <div class="item-product-cart d-flex">
+                        <div class="thumb-product-cart">
+                            <img src="../../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg" alt="" class="lazy">
+                        </div>
+    
+                        <div class="info-product-cart">
+                            <h3>
+                                <a href="#">
+                                    Lealia Blazer - Áo blazer nhung trơn
+                                </a>
+                            </h3>
+                            <div class="info-properties d-flex">
+                                <p class="properties-color">Màu sắc: <span style="color: #000;">Đen</span></p>
+                                <p>Size: <span style="text-transform: uppercase">m</span></p>
+                            </div>
+                            <div class="info-price-mini d-flex">
+                                <div class="info-price-quantity d-flex">
+                                    <div class="price-quantity-minus price-quantity">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                    <input type="number" value="1" data-product-sub-id="186719" data-product-index="0">
+                                    <div class="price-quantity-plus price-quantity">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+                                <div class="price-cart-mini">
+                                    <ins>
+                                        <span>
+                                            1.862.000₫                             
+                                        </span>
+                                    </ins>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+    
+            <!-- item cart -->
+            <!-- <div class="item-product-cart d-flex">
+                        <div class="thumb-product-cart">
+                            <img src="../../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg" alt="" class="lazy">
+                        </div>
+    
+                        <div class="info-product-cart">
+                            <h3>
+                                <a href="#">
+                                    Lealia Blazer - Áo blazer nhung trơn
+                                </a>
+                            </h3>
+                            <div class="info-properties d-flex">
+                                <p class="properties-color">Màu sắc: <span style="color: #000;">Đen</span></p>
+                                <p>Size: <span style="text-transform: uppercase">m</span></p>
+                            </div>
+                            <div class="info-price-mini d-flex">
+                                <div class="info-price-quantity d-flex">
+                                    <div class="price-quantity-minus price-quantity">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                    <input type="number" value="1" data-product-sub-id="186719" data-product-index="0">
+                                    <div class="price-quantity-plus price-quantity">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+                                <div class="price-cart-mini">
+                                    <ins>
+                                        <span>
+                                            1.862.000₫                             
+                                        </span>
+                                    </ins>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+    
+            <div class="bottom-action">
+            <!-- <input type="hidden" name="total_price_not_format" value="5158000"> -->
+            <div class="total-price">Tổng cộng: <strong>0đ</strong></div>
+            <div class="box-action">
+                <a href="#" class="action-view-cart">Xem giỏ hàng</a>
+                <a href="#" class="action-login">Đăng nhập</a>
+            </div>
+            </div>
+        </div>
+        <div class="container d-flex">
+            <nav class="main-menu">
+            <!-- nav -->
+            <ul class="menu">
+                <li>
+                <a href="#">NỮ</a>
+                <ul class="sub-menu">
+                    <div class="cat-sub-menu">
+                    <div>
+                        <a href="#"> NEW ARRIVAL </a>
+                    </div>
+    
+                    <div>
+                        <a href="#"> IVY YOU </a>
+                    </div>
+    
+                    <div>
+                        <a href="#"> EXPRESS - FALL/WINTER 2023 COLLECTION </a>
+                    </div>
+    
+                    <div>
+                        <a href="#"> DELICATE URBAN </a>
+                    </div>
+    
+                    <div>
+                        <a href="#"> REFINED - NEW COLLECTION FW2023 </a>
+                    </div>
+                    </div>
+    
+                    <div class="list-submenu d-flex">
+                    <div class="item-list-submenu">
+                        <h3><a href="#">ÁO</a></h3>
+                        <ul>
+                        <li>
+                            <a href="#">Áo sơ mi</a>
+                        </li>
+                        <li>
+                            <a href="">Áo thun</a>
+                        </li>
+                        <li>
+                            <a href="">Áo kiểu</a>
+                        </li>
+                        <li>
+                            <a href="">Áo croptop</a>
+                        </li>
+                        <li>
+                            <a href="">Áo peplum</a>
+                        </li>
+                        <li>
+                            <a href="">Áo vest/ blazer</a>
+                        </li>
+                        <li>
+                            <a href="">Áo len</a>
+                        </li>
+                        </ul>
+                    </div>
+    
+                    <div class="item-list-submenu">
+                        <h3><a href="https://ivymoda.com/danh-muc/ao-khoac-nu-dep">ÁO KHOÁC</a></h3>
+                        <ul>
+                        <li>
+                            <a href="#">Áo khoác</a>
+                        </li>
+                        <li>
+                            <a href="#">Áo dạ</a>
+                        </li>
+                        <li>
+                            <a href="#">Áo phao</a>
+                        </li>
+                        <li>
+                            <a href="#">Áo măng tô</a>
+                        </li>
+                        </ul>
+                    </div>
+    
+                    <div class="item-list-submenu">
+                        <h3><a href="#">QUẦN &amp; JUMPSUIT</a></h3>
+                        <ul>
+                        <li>
+                            <a href="#">Quần jeans</a>
+                        </li>
+                        <li>
+                            <a href="#">Quần dài</a>
+                        </li>
+                        <li>
+                            <a href="#">Quần lửng/ short</a>
+                        </li>
+                        <li>
+                            <a href="#">Quần baggy</a>
+                        </li>
+                        <li>
+                            <a href="#">Jumpsuit</a>
+                        </li>
+                        </ul>
+                    </div>
+    
+                    <div class="item-list-submenu">
+                        <h3><a href="#">CHÂN VÁY</a></h3>
+                        <ul>
+                        <li>
+                            <a href="#">Chân váy</a>
+                        </li>
+                        <li>
+                            <a href="#">Chân váy xếp ly</a>
+                        </li>
+                        <li>
+                            <a href="#">Chân váy chữ A</a>
+                        </li>
+                        </ul>
+                    </div>
+    
+                    <div class="item-list-submenu">
+                        <h3><a href="#">ĐẦM</a></h3>
+                        <ul>
+                        <li>
+                            <a href="#">Đầm</a>
+                        </li>
+                        <li>
+                            <a href="#">Đầm maxi/ voan</a>
+                        </li>
+                        <li>
+                            <a href="#">Đầm thun</a>
+                        </li>
+                        <li>
+                            <a href="#">Senora - Đầm dạ hội</a>
+                        </li>
+                        </ul>
+                    </div>
+    
+                    <div class="item-list-submenu">
+                        <h3><a href="https://ivymoda.com/danh-muc/do-lot">ĐỒ LÓT</a></h3>
+                        <ul>
+                        <li>
+                            <a href="#">Áo bra</a>
+                        </li>
+                        <li>
+                            <a href="#">Quần lót</a>
+                        </li>
+                        </ul>
+                    </div>
+    
+                    <div class="item-list-submenu">
+                        <h3><a href="https://ivymoda.com/danh-muc/phu-kien">PHỤ KIỆN</a></h3>
+                        <ul>
+                        <li>
+                            <a href="#">Túi/ ví</a>
+                        </li>
+                        <li>
+                            <a href="#">Giày/dép &amp; Sandals</a>
+                        </li>
+                        <li>
+                            <a href="#">Phụ kiện</a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </ul>
+                </li>
+    
+                <li>
+                <a href="#">NAM</a>
+                <ul class="sub-menu">
+                    <div class="cat-sub-menu">
+                    <div>
+                        <a href="#">NEW ARRIVALS</a>
+                    </div>
+                    </div>
+    
+                    <div class="list-submenu d-flex">
+                    <div class="item-list-submenu">
+                        <h3><a href="#">ÁO</a></h3>
+                        <ul>
+                        <li>
+                            <a href="#">Áo thun</a>
+                        </li>
+                        <li>
+                            <a href="#">Áo khoác Nam</a>
+                        </li>
+                        <li>
+                            <a href="#">Áo polo</a>
+                        </li>
+                        <li>
+                            <a href="#">Áo sơ mi</a>
+                        </li>
+                        <li>
+                            <a href="#">Áo phao</a>
+                        </li>
+                        <li>
+                            <a href="#">Áo len</a>
+                        </li>
+                        <li>
+                            <a href="#">Áo vest</a>
+                        </li>
+                        </ul>
+                    </div>
+    
+                    <div class="item-list-submenu">
+                        <h3><a href="#">QUẦN NAM</a></h3>
+                        <ul>
+                        <li>
+                            <a href="#">Quần jeans</a>
+                        </li>
+                        <li>
+                            <a href="#">Quần lửng/short</a>
+                        </li>
+                        <li>
+                            <a href="#">Quần dài</a>
+                        </li>
+                        <li>
+                            <a href="#">Quần khaki</a>
+                        </li>
+                        <li>
+                            <a href="#">Quần tây</a>
+                        </li>
+                        </ul>
+                    </div>
+    
+                    <div class="item-list-submenu">
+                        <h3><a href="#">GIÀY &amp; DÉP</a></h3>
+                        <ul>
+                        <li>
+                            <a href="#">Giày/Dép </a>
+                        </li>
+                        </ul>
+                    </div>
+    
+                    <div class="item-list-submenu">
+                        <h3><a href="#">PHỤ KIỆN</a></h3>
+                        <ul>
+                        <li>
+                            <a href="#">Phụ kiện</a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </ul>
+                </li>
+    
+                <li>
+                <a href="#">TRẺ EM</a>
+                <ul class="sub-menu">
+                    <div class="cat-sub-menu">
+                    <div>
+                        <a href="#">NEW ARRIVAL</a>
+                    </div>
+                    </div>
+                    <div class="list-submenu d-flex">
+                    <div class="item-list-submenu">
+                        <h3><a href="#">ÁO</a></h3>
+                        <ul>
+                        <li>
+                            <a href="#">Áo thun</a>
+                        </li>
+                        <li>
+                            <a href="#">Áo khoác Nam</a>
+                        </li>
+                        <li>
+                            <a href="#">Áo polo</a>
+                        </li>
+                        <li>
+                            <a href="#">Áo sơ mi</a>
+                        </li>
+                        <li>
+                            <a href="#">Áo phao</a>
+                        </li>
+                        <li>
+                            <a href="#">Áo len</a>
+                        </li>
+                        <li>
+                            <a href="#">Áo vest</a>
+                        </li>
+                        </ul>
+                    </div>
+    
+                    <div class="item-list-submenu">
+                        <h3><a href="#">BÉ TRAI</a></h3>
+                        <ul>
+                        <li>
+                            <a href="3">Áo bé trai</a>
+                        </li>
+                        <li>
+                            <a href="#">Quần bé trai</a>
+                        </li>
+                        <li>
+                            <a href="#">Phụ kiện bé trai</a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </ul>
+                </li>
+                <li class="red-text">
+                <a href="#">SIÊU SALE THÁNG 10</a>
+                </li>
+                <li>
+                <a href="#">LIFESTYLE</a>
+                </li>
+                <li>
+                <a href="#">VỀ CHÚNG TÔI</a>
+                </li>
+            </ul>
+            </nav>
+    
+            <!-- brand -->
+            <div class="site-brand">
+            <a href="#">
+                <img src="../../../assets/img/logo/logo.png" alt="Trang chủ | IVY moda" />
+            </a>
+            </div>
+    
+            <!-- right header -->
+            <div class="right-header">
+            <form class="search-form">
+                <button type="button">
+                <i class="fa fa-search"></i>
+                </button>
+                <input
+                id="search-quick"
+                type="text"
+                name="q"
+                placeholder="TÌM KIẾM SẢN PHẨM"
+                autocomplete="off"
+                minlength="1"
+                />
+                <div class="quick-search">
+                <div class="item-searchs">
+                    <h4>Tìm kiếm nhiều nhất</h4>
+                    <div class="item-side-size">
+                    <label class="item-sub-list po-relative mb-2">
+                        <a href="#" class="item-sub-title">Đầm</a>
+                    </label>
+                    <label class="item-sub-list po-relative mb-2">
+                        <a href="#" class="item-sub-title">Nam</a>
+                    </label>
+                    <label class="item-sub-list po-relative mb-2">
+                        <a href="#" class="item-sub-title">Áo vest</a>
+                    </label>
+                    <label class="item-sub-list po-relative mb-2">
+                        <a href="#" class="item-sub-title">Quần jeans</a>
+                    </label>
+                    <label class="item-sub-list po-relative mb-2">
+                        <a href="#" class="item-sub-title">Quần bó</a>
+                    </label>
+                    <label class="item-sub-list po-relative mb-2">
+                        <a href="#" class="item-sub-title">Mũ</a>
+                    </label>
+                    <label class="item-sub-list po-relative mb-2">
+                        <a href="#" class="item-sub-title">Váy</a>
+                    </label>
+                    </div>
+                </div>
+    
+                <div class="item-searchs">
+                    <h4>Gần đây</h4>
+                    <div class="item-side-size">
+                    <label class="item-sub-list po-relative mb-2">
+                        <a href="#" class="item-sub-title">Đầm</a>
+                    </label>
+                    <label class="item-sub-list po-relative mb-2">
+                        <a href="#" class="item-sub-title">Nam</a>
+                    </label>
+                    <label class="item-sub-list po-relative mb-2">
+                        <a href="#" class="item-sub-title">Áo vest</a>
+                    </label>
+                    <label class="item-sub-list po-relative mb-2">
+                        <a href="#" class="item-sub-title">Quần jeans</a>
+                    </label>
+                    <label class="item-sub-list po-relative mb-2">
+                        <a href="#" class="item-sub-title">Quần bó</a>
+                    </label>
+                    <label class="item-sub-list po-relative mb-2">
+                        <a href="#" class="item-sub-title">Mũ</a>
+                    </label>
+                    <label class="item-sub-list po-relative mb-2">
+                        <a href="#" class="item-sub-title">Váy</a>
+                    </label>
+                    </div>
+                </div>
+                </div>
+            </form>
+    
+            <div class="header-actions">
+                <div class="item wallet">
+                <div type="button" onclick="toggleHelp()" id="help">
+                    <i class="fa-solid fa-headphones"></i>
+                </div>
+                <div class="sub-action">
+                    <div class="top-action">
+                    <h3>Trợ giúp</h3>
+                    </div>
+                    <ul>
+                    <li>
+                        <a href="#">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        Hotline
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <i class="fa-regular fa-comment"></i>
+                        Live Chat
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <i class="fa-brands fa-facebook-messenger"></i>
+                        Messenger
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <i class="fa-regular fa-envelope"></i>
+                        Email
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <i class="fa-solid fa-receipt"></i>
+                        Tra cứu đơn hàng
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+    
+                <div class="item wallet">
+                <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+                </div>
+    
+                <div class="item item-cart">
+                <div type="button" class="icon" href="#" onclick="openCart()">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="number-cart">0</span>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="site-main">
+        <div class="container">
+            <div class="breadcrumb-products">
+                <ol class="breadcrumb__list">
+                    <li class="breadcrumb__item">
+                        <a class="breadcrumb__link" href="#">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a href="#" class="breadcrumb__link" title="Chính sách điều khoản">
+                            Chính sách điều khoản
+                        </a>
+                    </li>
+                </ol>
+            </div>
+
+            <section class="banner-section banner-policy">
+                <div class="img-banner-look">
+                    <img src="../../../assets/img/banner/banner3.png" alt="banner-dieukhoan" class="banner-pc">
+                    <!-- <img src="../../../assets/img/banner/banner_2.jpeg" alt="banner-tuyendung-mb" class="banner-mb"> -->
+                </div>
+            </section>
+
+            <div class="page-policy d-flex">
+                <ul class="side-bar">
+                    <li>
+                        <a href="#">
+                            Về IVY moda
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            Chính sách thẻ thành viên
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            Bảo hành trọn đời
+                        </a>
+                    </li>
+                    <li class="#">
+                        <a href="#">
+                            Chính sách đổi trả
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Hệ thống cửa hàng
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            Q&amp;A
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="main-policy main-complaints main-rules">
+                    <h2 class="title-policy">
+                        CHÍNH SÁCH ĐIỀU KHOẢN SỬ DỤNG
+                    </h2>
+                    <div class="content-policy">
+                        <h3>
+                            1. IVYMODA.COM LÀ WEBSITE CỦA THƯƠNG HIỆU THỜI TRANG IVY MODA
+                        </h3>
+                        <p>
+                            IVYmoda.com là kênh mua sắm và hỗ trợ đắc lực công tác chăm sóc Khách Hàng của Thương hiệu thời trang IVY moda;
+                        </p>
+                        <p>
+                            Kể từ khi ra mắt vào cuối năm 2021, IVYmoda.com đã - đang và sẽ không ngừng cải tiến và nâng cấp để ngày một hoàn thiện tính năng, thân thiện nhất với Khách Hàng.
+                        </p>
+                        <div class="height-32 display-pc-block">&nbsp;</div>
+                        <h3>
+                            2. CHÍNH SÁCH THẺ THÀNH VIÊN ONLINE
+                        </h3>
+                        <h4>
+                            2.1 THẺ BẠC / SILVER
+                        </h4>
+                        <h5>
+                            ĐIỀU KIỆN
+                        </h5>
+                        <p>
+                            Khách hàng có tổng giá trị hóa đơn từ: 12.000.000 VNĐ trong 01 năm kể từ ngày bắt đầu sử dụng thẻ
+                        </p>
+                        <p>
+                            Điều kiện gia hạn thẻ: Khách hàng có tổng giá trị mua hàng từ 12.000.000 VNĐ trong 01 năm tiếp theo sử dụng thẻ
+                        </p>
+                        <p>
+                            Điều kiện nâng hạng thẻ VÀNG/GOLD MEMBERSHIP: Khách hàng có tổng giá trị mua hàng từ 23.000.00 VNĐ kể từ ngày đạt hạng thẻ BẠC/SILVER MEMBERSHIP
+                        </p>
+                        <div class="height-8">&nbsp;</div>
+                        <h5>QUYỀN LỢI</h5>
+                        <p>Giảm 10% khi mua hàng tại hệ thống IVY moda trong vòng 01 năm kể từ ngày đạt hạng thẻ</p>
+                        <p>Nhận quà tặng sinh nhật của khách hàng, kèm theo những chính sách ưu đãi dành riêng cho khách hàng VIP vào các dịp lễ đặc biệt.</p>
+                        <p>Khách hàng sẽ được nhận thêm các ưu đãi hấp dẫn từ các đối tác của IVY Moda trong các lĩnh vực: Mỹ Phẩm, Nước hoa, Trang sức, Beauty - Spa, Nhà hàng, Tạp chí…</p>
+                        <div class="height-8">&nbsp;</div>
+                        <h4>2.2 THẺ VÀNG / GOLD</h4>
+                        <h5>ĐIỀU KIỆN</h5>
+                        <p>Khách hàng có tổng giá trị mua hàng từ 35.000.000 VNĐ trong 01 năm Hoặc Khách hàng có tổng giá trị mua hàng từ: 23.000.000 VNĐ trong vòng 01 năm kể từ ngày đạt hạng thẻ BẠC/SILVER MEMBERSHIP</p>
+                        <p>Điều kiện gia hạn thẻ: Khách hàng có tổng giá trị mua hàng từ 35.000.000 VNĐ trong 01 năm tiếp theo sử dụng thẻ</p>
+                        <p>Điều kiện nâng hạng thẻ KIM CƯƠNG/DIAMOND MEMBERSHIP: Khách hàng có tổng giá trị mua hàng từ 25.000.000 VNĐ trong 01 năm kể từ ngày đạt hạng thẻ VÀNG/GOLD MEMBERSHIP</p>
+                        <div class="height-8">&nbsp;</div>
+
+                        <h5>QUYỀN LỢI</h5>
+                        <p>Giảm 20% khi mua hàng tại hệ thống IVY moda trong vòng 01 năm kể từ ngày đạt hạng thẻ</p>
+                        <p>Nhận quà tặng sinh nhật của khách hàng, kèm theo những chính sách ưu đãi dành riêng cho khách hàng VIP vào các dịp lễ đặc biệt.</p>
+                        <p>Khách hàng sẽ được nhận thêm các ưu đãi hấp dẫn từ các đối tác của IVY Moda trong các lĩnh vực: Mỹ Phẩm, Nước hoa, Trang sức, Beauty – Spa, Nhà hàng, Tạp chí…</p>
+                        <div class="height-24">&nbsp;</div>
+                        <h4>2.3 ĐIỀU KHOẢN SỬ DỤNG THẺ THÀNH VIÊN ONLINE</h4>
+                        <h5>ĐIỀU KIỆN</h5>
+                        <p>Khách hàng có tổng giá trị mua hàng từ 60.000.000 VNĐ trong 01 năm Hoặc Khách hàng có tổng giá trị mua hàng từ: 25.000.000 VNĐ trong vòng 01 năm kể từ ngày đạt hạng thẻ VÀNG/GOLD MEMBERSHIP</p>
+                        <p>Điều kiện gia hạn thẻ: Khách hàng có tổng giá trị mua hàng từ 60.000.000 VNĐ trong 01 năm kể từ ngày đạt hạng thẻ KIM CƯƠNG/DIAMOND MEMBERSHIP</p>
+                        <div class="height-8">&nbsp;</div>
+                        <h5>QUYỀN LỢI</h5>
+                        <p>Giảm 30% khi mua hàng tại hệ thống IVY moda trong vòng 01 năm kể từ ngày đạt hạng thẻ. Ngoài Chiết khấu thẻ, Khách hàng được giảm giá thêm 5% khi mua hàng trong chương trình giảm giá 30%</p>
+                        <p>Nhận quà tặng sinh nhật của khách hàng, kèm theo những chính sách ưu đãi dành riêng cho khách hàng VIP vào các dịp lễ đặc biệt.</p>
+                        <p>Khách hàng sẽ được nhận thêm các ưu đãi hấp dẫn từ các đối tác của IVY Moda trong các lĩnh vực: Mỹ Phẩm, Nước hoa, Trang sức, Beauty - Spa, Nhà hàng, Tạp chí…</p>
+                        <div class="height-32 display-pc-block">&nbsp;</div>
+                        <h3>3. ĐIỀU KHOẢN SỬ DỤNG THẺ THÀNH VIÊN ONLINE</h3>
+                        <p>Thẻ có giá trị duy nhất đối với chủ thẻ. Không được phép sang nhượng hay cho mượn thẻ dưới mọi hình thức;</p>
+                        <p>Vui lòng xuất trình thẻ khi thanh toán để tích lũy điểm và áp dụng chiết khấu của thẻ</p>
+                        <p>Chiết khấu thẻ chỉ được áp dụng với hàng nguyên giá;</p>
+                        <p>Điểm tích lũy của chủ thẻ (tương ứng với giá trị mua hàng) sẽ được quy đổi thành các phần quà có giá trị, duy trì và nâng hạng thẻ;</p>
+                        <p>Thẻ có giá trị sử dụng trong vòng 01 năm kể từ ngày đăng ký, đạt hạng thẻ, gia hạn hoặc nâng hạng thẻ;</p>
+                        <p>Thẻ được áp được áp dụng cho tất cả hình thức mua hàng tại cửa hàng và mua hàng online, không bao gồm các đại lý;</p>
+                        <p>
+                            Thẻ này do IVY moda phát hành và là tài sản của IVY moda. IVY moda có quyền từ chối sử dụng, tạm khóa, đình chỉ thẻ trong một số trường hợp mà không cần báo trước tới khách hàng.<br>
+                            Việc Khách Hàng truy cập hoặc thực hiện giao dịch trên Website: ivymoda.com và Ứng dụng di động của IVY moda được hiểu là Khách Hàng đã đọc, hiểu và đồng ý tuân thủ Chính Sách và Điều khoản sử dụng thẻ thành viên (”Chính sách và Điều khoản“), kể cả các phiên bản sửa đổi, bổ sung của Chính Sách và Điều khoản. Phiên bản sửa đổi, bổ sung Chính Sách và Điều khoản này (nếu có) sẽ có hiệu lực ngay khi được cập nhật chính thức trên Website và Ứng dụng và không cần phải thông báo trước, khi Khách Hàng truy cập và thực hiện giao dịch với IVY moda sau khi thay đổi Chính sách và Điều Khoản mới có hiệu lực, có nghĩa là Khách Hàng chấp nhận với những thay đổi đó. Một lần nữa, IVY moda lưu ý: Khách Hàng vui lòng cập nhật thường xuyên hoặc đọc kỹ lại Chính sách và Điều khoản trước khi thực hiện giao dịch.
+                        </p>
+                        <div class="height-32 display-pc-block">&nbsp;</div>
+                        <h3>4. CHÍNH SÁCH BẢO MẬT VÀ CHIA SẺ THÔNG TIN</h3>
+                        <h4>4.1. MỤC ĐÍCH ÁP DỤNG</h4>
+                        <p>Khi Khách Hàng thực hiện giao dịch và/hoặc đăng ký mở tài khoản tại Website và Ứng dụng, tùy từng thời điểm, Khách Hàng phải cung cấp một số thông tin cần thiết cho việc thực hiện giao dịch và/hoặc đăng ký tài khoản (“Thông Tin Khách Hàng”).</p>
+                        <p>Khách Hàng có trách nhiệm đảm bảo những thông tin Khách Hàng cung cấp là đầy đủ và chính xác và luôn cập nhật thông tin để đảm bảo tính đầy đủ và chính xác. IVY moda không chịu trách nhiệm giải quyết bất kỳ tranh chấp nào nếu thông tin Khách Hàng cung cấp không chính xác hoặc không được cập nhật hoặc giả mạo.</p>
+                        <div class="height-24">&nbsp;</div>
+                        <h4>4.2.2. Về việc lưu giữ và bảo mật thông tin riêng</h4>
+                        <p>Thông Tin Khách Hàng, cũng như các thông tin trao đổi giữa Khách Hàng và IVY moda, đều được lưu giữ và bảo mật bởi hệ thống của IVY moda, riêng thông tin thẻ thanh toán của Khách Hàng sẽ do các đối tác Cổng thanh toán của IVY moda bảo mật theo tiêu chuẩn quốc tế.</p>
+                        <p>IVY moda có các biện pháp thích hợp về kỹ thuật và an ninh để ngăn chặn việc truy cập, sử dụng trái phép Thông Tin Khách Hàng. IVY moda cũng thường xuyên phối hợp với các chuyên gia bảo mật nhằm cập nhật những thông tin mới nhất về an ninh mạng để đảm bảo sự an toàn cho Thông Tin Khách Hàng khi Khách Hàng truy cập, đăng ký mở tài khoản, sử dụng các tính năng của Website và Ứng dụng. Khi thu thập dữ liệu, IVY moda thực hiện lưu giữ và bảo mật Thông Tin Khách Hàng tại hệ thống máy chủ và các Thông Tin Khách Hàng này được bảo đảm an toàn bằng các hệ thống tường lửa (firewall), các biện pháp kiểm soát truy cập, mã hóa dữ liệu.</p>
+                        <p>Các thông tin thẻ thanh toán của Khách Hàng được các đối tác cổng thanh toán của IVY moda bảo vệ theo tiêu chuẩn quốc tế. IVY moda không cho phép các bên thứ ba theo dõi hoặc thu thập thông tin của Khách Hàng trên Website và Ứng dụng của IVY moda.</p>
+                        <p>Đối với các tài khoản đã đóng chúng tôi vẫn lưu trữ Thông Tin Cá Nhân và truy cập của Khách Hàng để phục vụ cho các mục đích phòng chống gian lận, điều tra, giải đáp thắc mắc…</p>
+                        <p>Khách Hàng tuyệt đối không được có bất kỳ hành vi sử dụng công cụ, chương trình để can thiệp trái phép vào hệ thống hay làm thay đổi cấu trúc dữ liệu của IVY moda, cũng như bất kỳ hành vi nào khác nhằm phát tán, cổ vũ cho các hoạt động với mục đích can thiệp, phá hoại hay xâm nhập vào dữ liệu của hệ thống IVY moda, cũng như các các hành vi mà pháp luật Việt Nam nghiêm cấm. Trong trường hợp IVY moda phát hiện Khách Hàng có hành vi cố tình giả mạo, gian lận, phát tán các thông tin trái phép,…IVY moda có quyền chuyển Thông Tin Cá Nhân của Khách Hàng cho các cơ quan có thẩm quyền để xử lý theo quy định pháp luật.</p>
+                        <div class="height-32 display-pc-block">&nbsp;</div>
+                        <h4>4.2.3. Về việc sử dụng Thông Tin Khách Hàng</h4>
+                        <p>IVY moda có quyền sử dụng các thông tin Khách Hàng cung cấp, bao gồm nhưng không giới hạn ở Thông Tin Khách Hàng để:</p>
+                        <p>Cung cấp các dịch vụ/tiện ích cho Khách Hàng dựa trên nhu cầu và các thói quen của Khách Hàng khi truy cập vào Website và Ứng dụng;</p>
+                        <p>Gửi các thông báo, trao đổi thông tin giữa Khách Hàng với IVY moda qua Website và Ứng dụng, hoặc ngược lại;</p>
+                        <p>Phát hiện, ngăn chặn các hoạt động giả mạo, phá hoại tài khoản của Khách Hàng hoặc các hoạt động giả mạo nhận dạng của Khách Hàng trên Website và Ứng dụng;</p>
+                        <p>Liên lạc, hỗ trợ liên lạc và giải quyết với Khách Hàng trong những trường hợp đặc biệt.</p>
+                        <div class="height-32 display-pc-block">&nbsp;</div>
+                        <h4>4.2.4. Về việc liên kết với các website khác</h4>
+                        <p>Khách Hàng có trách nhiệm bảo vệ thông tin tài khoản của mình và không cung cấp bất kỳ thông tin nào liên quan đến tài khoản và mật khẩu truy cập trên Website và Ứng dụng của IVY moda trên các website khác ngoại trừ khi đăng nhập vào địa chỉ chính thức của IVY moda tại ivymoda.com và Ứng dụng di dộng IVY moda;</p>
+                        <p>Cung cấp các dịch vụ/tiện ích cho Khách Hàng dựa trên nhu cầu và các thói quen của Khách Hàng khi truy cập vào Website và Ứng dụng;</p>
+                        <p>Ngoài các trường hợp nêu trên, IVY moda sẽ có thông báo cụ thể cho Khách Hàng khi phải tiết lộ Thông Tin Khách Hàng cho một bên thứ ba. Trong trường hợp này, IVY moda cam kết sẽ chỉ tiết lộ Thông Tin Khách Hàng khi được sự đồng ý của Khách Hàng;</p>
+                        <p>IVY moda có thể chia sẻ Thông Tin Khách Hàng cho các mục đích sau:<br>
+                            - Nghiên cứu thị trường và các báo cáo phân tích: IVY moda có thể dùng Thông Tin Khách Hàng để nghiên cứu thị trường, tổng hợp, phân tích thông tin chung của Khách Hàng (ví dụ: độ tuổi trung bình, khu vực địa lý…), thông tin chi tiết sẽ được ẩn và chỉ được dùng để phục vụ công việc thống kê. Trong trường hợp IVY moda tiến hành khảo sát cần sự tham gia của Khách Hàng, bất kỳ câu trả lời cho khảo sát hoặc thăm dò dư luận mà Khách Hàng cung cấp cho IVY moda sẽ không được chuyển cho bất kỳ bên thứ ba nào;<br>
+                            - Trao đổi Thông Tin Khách Hàng với các bên thứ ba là đối tác, đại lý của IVY moda: IVY moda có thể chuyển Thông Tin Khách Hàng cho các đại lý và nhà thầu phụ để làm phân tích dữ liệu, tiếp thị và hỗ trợ dịch vụ khách hàng. IVY moda cũng có thể trao đổi Thông Tin Khách Hàng với bên thứ ba cho mục đích chống gian lận và giảm rủi ro tín dụng.</p>
+                        <h4>4.2.6. Sử dụng Cookie</h4>
+                        <p>IVY moda cung cấp các tập tin cookie hoặc các công nghệ tương tự, nhằm thu thập các thông tin như: lịch sử truy cập, các lựa chọn của Khách Hàng khi truy cập và sử dụng tính năng của Website và Ứng dụng... nhằm tăng trải nghiệm bảo mật và giúp IVY moda hiểu rõ nhu cầu, sở thích của Khách Hàng để có thể cung cấp dịch vụ tốt hơn.</p>
+                        <div class="height-32 display-pc-block">&nbsp;</div>
+                        <h4>4.2.7. Liên hệ, giải đáp thắc mắc</h4>
+                        <p>Bất kỳ khi nào Khách Hàng cần hỗ trợ, hãy gọi đến số hotline của IVY moda: 090 589 8683 hoặc gửi email đến địa chỉ: cskh@ivy.com.vn.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- site bottom -->
+    <div class="site-bottom">
+        <div class="container">
+            <div class="main-footer d-flex">
+            <!-- left footer -->
+            <div class="left-footer">
+                <div class="top-left">
+                <div class="logo-footer">
+                    <a href="#">
+                    <img src="../../../assets/img/logo/logo-footer.png" alt="logo" />
+                    </a>
+                </div>
+    
+                <a href="#" class="dmca-badge">
+                    <img
+                    src="../../../assets/img/logo/dmca_protected_16_120.png"
+                    alt=""
+                    style="width: 90%; object-position: center"
+                    />
+                </a>
+    
+                <div class="logo-conthuong">
+                    <a href="#">
+                    <img src="../../../assets/img/logo/img-congthuong.png" alt="congthuong" />
+                    </a>
+                </div>
+                </div>
+    
+                <div class="content-left-ft content-ft">
+                <div class="info-left-ft">
+                    <p>Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 0105777650</p>
+    
+                    <p>
+                    <strong>Địa chỉ đăng ký:</strong> Tổ dân phố Tháp, P.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà
+                    Nội, Việt Nam
+                    </p>
+    
+                    <p><strong>Số điện thoại:</strong> 0243 205 2222/ 090 589 8683</p>
+    
+                    <p><strong>Email:</strong> cskh@ivy.com.vn</p>
+                </div>
+                </div>
+    
+                <ul class="list-social">
+                <li>
+                    <a href="#">
+                    <img src="../../../assets/img/icon/ic_fb.svg" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="../../../assets/img/icon/ic_gg.svg" alt="" />
+                    </a>
+                </li>
+                <li style="width: 30px; height: 30px">
+                    <a href="#">
+                    <img src="../../../assets/img/icon/ic_instagram.svg" alt="" />
+                    </a>
+                </li>
+                <li style="width: 30px; height: 30px">
+                    <a href="#">
+                    <img src="../../../assets/img/icon/ic_pinterest.svg" alt="" />
+                    </a>
+                </li>
+                <li style="width: 30px; height: 30px">
+                    <a href="#">
+                    <img src="../../../assets/img/icon/ic_ytb.svg" alt="" />
+                    </a>
+                </li>
+                </ul>
+    
+                <div class="hotline">
+                <a href="#"> HOTLINE: 0246 662 3434 </a>
+                </div>
+            </div>
+    
+            <!-- center footer -->
+            <div class="center-footer d-flex">
+                <div class="left-center-ft item-center-ft">
+                <p class="title-footer">Giới thiệu</p>
+                <ul>
+                    <li>
+                    <a href="#"> Về IVY moda </a>
+                    </li>
+                    <li>
+                    <a href="#"> Tuyển dụng </a>
+                    </li>
+                    <li>
+                    <a href="#"> Hệ thống cửa hàng </a>
+                    </li>
+                </ul>
+                </div>
+    
+                <div class="main-center-ft item-center-ft">
+                <p class="title-footer">Dịch vụ khách hàng</p>
+                <ul>
+                    <li>
+                    <a href="#">Chính sách điều khoản</a>
+                    </li>
+                    <li>
+                    <a href="#">Hướng dẫn mua hàng</a>
+                    </li>
+                    <li>
+                    <a href="#">Chính sách thanh toán</a>
+                    </li>
+                    <li>
+                    <a href="#">Chính sách đổi trả</a>
+                    </li>
+                    <li>
+                    <a href="#">Chính sách bảo hành</a>
+                    </li>
+                    <li>
+                    <a href="#">Chính sách giao nhận vận chuyển</a>
+                    </li>
+                    <li>
+                    <a href="#">Chính sách thẻ thành viên</a>
+                    </li>
+                    <li>
+                    <a href="#">Hệ thống cửa hàng</a>
+                    </li>
+                    <li>
+                    <a href="#">Q&amp;A</a>
+                    </li>
+                </ul>
+                </div>
+    
+                <div class="right-center-ft item-center-ft">
+                <p class="title-footer">Liên hệ</p>
+                <ul>
+                    <li>
+                    <a href="#">Hotline</a>
+                    </li>
+                    <li>
+                    <a href="#">Email</a>
+                    </li>
+                    <li>
+                    <a href="#">Live Chat</a>
+                    </li>
+                    <li>
+                    <a href="#" target="_blank">Messenger</a>
+                    </li>
+                    <li>
+                    <a href="#">Liên hệ</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+    
+            <!-- right footer -->
+            <div class="right-footer">
+                <div class="register-form">
+                <p class="title-footer">Nhận thông tin các chương trình của IVY moda</p>
+    
+                <form action="" id="frm_subscribe">
+                    <input
+                    id="email_subscribe"
+                    type="text"
+                    name="email"
+                    placeholder="Nhập địa chỉ email"
+                    required="required"
+                    />
+                    <div class="btn-submit">
+                    <input id="btn-submit" class="form-submit" value="Đăng ký" type="submit" />
+                    </div>
+                </form>
+                </div>
+    
+                <div class="info-right-ft">
+                <p class="title-footer">Download App</p>
+                <ul>
+                    <li>
+                    <a href="#">
+                        <img src="../../../assets/img/logo/appstore.png" alt="" />
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#">
+                        <img src="../../../assets/img/logo/googleplay.png" alt="" />
+                    </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+      
+    <!-- site footer -->
+    <footer id="footer" class="site-footer">
+        <div class="container">
+            <div class="copy-right">©IVYmoda All rights reserved</div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>
