@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IVAMODA</title>
     <link rel="stylesheet" href="../../css/main.css" />
-    <link rel="stylesheet" href="../../css/dathang.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="../../css/fontawesome-free-6.4.2-web/css/all.css" />
@@ -17,16 +16,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.css" />
     <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> -->
     <script type="text/javascript" src="../../js/index.js"></script>
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
   </head>
   <body>
     <!-- header -->
@@ -578,177 +567,82 @@
     </header>
 
     <!-- main -->
-    <!--------order-->
     <main id="main" class="site-main">
       <div class="container">
-        <form action="" name="frm_cart" id="frm_cart">
-          <div class="cart pt-40 cart-page">
-            <div class="container__order row">
-              <div class="container__order-left col-lg-8">
-                <div class="checkout-process-bar block-border">
-                  <ul>
-                    <li class="active">
-                      <span> Giỏ hàng </span>
-                    </li>
-                    <li>
-                      <span> Đặt hàng </span>
-                    </li>
-                    <li>
-                      <span> Thanh toán </span>
-                    </li>
-                    <li>
-                      <span> Hoàn thành đơn </span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="content__order">
-                  <div class="content__order-left">
-                    <div class="content__order-left-element">
-                      <h3 class="content__order-title">Địa chỉ giao hàng</h3>
-                      <button class="content__order-login">ĐĂNG NHẬP</button>
-                      <button class="content__order-signUp">ĐĂNG Ký</button><br />
-                      <p class="content__order-msg">
-                        Đăng nhập/ Đăng ký tài khoản để được tích điểm và nhận thêm nhiều ưu đãi từ
-                        IVY moda.
-                      </p>
-                      <div class="form-container">
-                        <h3>
-                          <span> <i class="fa fa-check-circle" aria-hidden="true"></i> </span>Địa
-                          chỉ
-                        </h3>
-                        <div class="row">
-                          <div class="form-group col-md-6">
-                            <input type="text" class="form-control" placeholder="Họ và Tên" />
-                          </div>
-                          <div class="form-group col-md-6">
-                            <input type="text" class="form-control" placeholder="Số điện thoại" />
-                          </div>
-                          <div class="form-group col-md-6">
-                            <select id="city" class="form-control">
-                              <option value="" selected disabled value="-1">Tỉnh/ thành phố</option>
-                              <option value="">Hồ chí Minh</option>
-                              <option value="">Hà Nội</option>
-                            </select>
-                          </div>
-                          <div class="form-group col-md-6">
-                            <select id="district" class="form-control">
-                              <option selected disabled value="-1">Quận huyện</option>
-                              <option value="">Hồ chí Minh</option>
-                              <option value="">Hà Nội</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                            <select id="ward" class="form-control">
-                              <option selected disabled value="-1">Phường Xã</option>
-                              <option value="">Hồ chí Minh</option>
-                              <option value="">Hà Nội</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Địa chỉ" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+        <div class="auth">
+          <form>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword3"
+                  placeholder="Password"
+                />
+              </div>
+            </div>
+            <fieldset class="form-group">
+              <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios"
+                      id="gridRadios1"
+                      value="option1"
+                      checked
+                    />
+                    <label class="form-check-label" for="gridRadios1"> First radio </label>
                   </div>
-                  <div class="content__order-right">
-                    <div class="content__order-right-element">
-                      <h3 class="content__order-title">Phương thức giao hàng</h3>
-                      <div class="content__order-box">
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                        <span class="order-box-text">Chuyển phát nhanh</span>
-                      </div>
-                      <h3 class="content__order-right-msg-vat">
-                        Bạn có muốn nhận hoá đơn VAT không ?
-                      </h3>
-                    </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios"
+                      id="gridRadios2"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="gridRadios2"> Second radio </label>
                   </div>
-                </div>
-                <div class="checkout__payment-container">
-                  <h3>Phương thức thanh toán</h3>
-                  <div class="checkout__payment-box">
-                    <p>
-                      Mọi giao dịch đều được bảo mật và mã hóa. Thông tin thẻ tín dụng sẽ không bao
-                      giờ được lưu lại.
-                    </p>
-                    <div class="checkout__payment-option">
-                      <form action="" class="form_payment">
-                        <div class="field-payment">
-                          <input type="radio" name="selection" />
-                          <label for="">Thanh toán bằng thẻ tín dụng</label>
-                          <img src="../../assets/img/datmua/visa.png" alt="" /> <br />
-                        </div>
-                        <div class="field-payment">
-                          <input type="radio" name="selection" />
-                          <label for="">Thanh toán bằng thẻ ATM </label> <br />
-                          <span>Hỗ trợ thanh toán online hơn 38 ngân hàng</span>
-                        </div>
-                        <div class="field-payment">
-                          <input type="radio" name="selection" />
-                          <label for="">Thanh toán bằng Momo</label><br />
-                        </div>
-                        <div class="field-payment">
-                          <input type="radio" name="selection" />
-                          <label for="">Thanh toán khi giao hàng</label><br />
-                        </div>
-                      </form>
-                    </div>
+                  <div class="form-check disabled">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios"
+                      id="gridRadios3"
+                      value="option3"
+                      disabled
+                    />
+                    <label class="form-check-label" for="gridRadios3"> Third disabled radio </label>
                   </div>
                 </div>
               </div>
-              <div class="container__order-right col-lg-4">
-                <div class="cart-summary-box">
-                  <div class="box_product_total">
-                    <div class="cart-summary__total">
-                      <h3>Tóm tắt đơn hàng</h3>
-                      <div class="cart-summary__total__item">
-                        <p>Tổng tiền hàng</p>
-                        <p>3.140.000đ</p>
-                      </div>
-                      <div class="cart-summary__total__item">
-                        <p>Tạm tính</p>
-                        <p>2.198.000đ</p>
-                      </div>
-                      <div class="cart-summary__total__item">
-                        <p>Phí vận chuyển</p>
-                        <p>38.000đ</p>
-                      </div>
-                      <div class="cart-summary__total__item">
-                        <p>Tiền thanh toán</p>
-                        <p><strong>2.236.000đ</strong></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="cart-summary__voucher-form__title d-flex justify-content-around">
-                    <h4 class="active">Mã phiếu giảm giá</h4>
-                    <span></span>
-                    <h4 class="myVocher text-muted">Mã của tôi</h4>
-                  </div>
-                  <p id="coupon" style="padding-top: 5px; text-align: center; display: none"></p>
-                  <div class="row cart_coupon">
-                    <div class="form-group col-md-8">
-                      <input type="text" class="form-control" placeholder="Mã giảm giá" />
-                    </div>
-                    <div class="form-group col-md-4">
-                      <button class="btn btn-outline-dark button-appli">ÁP DỤNG</button>
-                    </div>
-                    <div class="form-group">
-                      <select class="form-select" name="" id="">
-                        <option value="" selected>Mã nhân viên hỗ trợ</option>
-                        <option value="">SA1</option>
-                        <option value="">SA2</option>
-                        <option value="">SA3</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="cart-summary__button-bot">
-                  <button class="btn-outline-dark button-complete">Tiếp tục thanh toán</button>
+            </fieldset>
+            <div class="form-group row">
+              <div class="col-sm-2">Checkbox</div>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1" />
+                  <label class="form-check-label" for="gridCheck1"> Example checkbox </label>
                 </div>
               </div>
             </div>
-          </div>
-        </form>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </main>
 
@@ -945,8 +839,5 @@
         <div class="copy-right">©IVYmoda All rights reserved</div>
       </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
-
-    <script src="../../js/order.js"></script>
   </body>
 </html>

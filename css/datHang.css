@@ -1,8 +1,8 @@
 .container__order {
-  position: relative;
+  /* position: relative;
   top: 100px;
-  /* border: 1px solid red ; */
-  margin: 10px 100px !important;
+
+  margin: 10px 100px !important; */
 
   /* display: flex;
   gap: 25px; */
@@ -217,7 +217,7 @@
   font-size: 14px;
   line-height: 16px;
 }
-.form_payment > .field {
+.field-payment {
   margin-bottom: 32px;
   font-size: 14px;
   line-height: 16px;
