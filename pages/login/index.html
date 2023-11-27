@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IVAMODA</title>
     <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/login.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="../../css/fontawesome-free-6.4.2-web/css/all.css" />
@@ -16,6 +17,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.css" />
     <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> -->
     <script type="text/javascript" src="../../js/index.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <!-- header -->
@@ -570,78 +581,76 @@
     <main id="main" class="site-main">
       <div class="container">
         <div class="auth">
-          <form>
-            <div class="form-group row">
-              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-              <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" />
+          <div class="auth-container">
+            <div class="auth-row">
+              <div class="auth-box auth-login">
+                <h3>Bạn đã có tài khoản IVY</h3>
+                <div class="auth-content">
+                  <p>
+                    Nếu bạn đã có tài khoản, hãy đăng nhập để tích lũy điểm thành viên và nhận được
+                    những ưu đãi tốt hơn!
+                  </p>
+                </div>
+                <!-- <form class="auth-form-login">
+                  
+                  <div class="login-field">
+                    <input type="text" placeholder="Email/SĐT" />
+                  </div>
+                  <div class="login-field">
+                    <input type="password" placeholder="Mật khẩu" />
+                  </div>
+                  <div class="login-check">
+                    <input type="checkbox" />
+                    <label for="">Ghi nhớ đăng nhập</label>
+                  </div>
+                  <div class="login-field">
+                    <span><a href="">Quên mật khẩu</a></span>
+                    <span><a href="">Đăng nhập bằng OTP</a></span>
+                  </div>
+                  <div class="login-field">
+                  </div>
+                </form> -->
+                <form action="">
+                  <div class="mb-3">
+                    <input type="text" class="form-control p-2" placeholder="Email/SĐT" />
+                  </div>
+                  <div class="mb-3">
+                    <input type="password" class="form-control p-2" placeholder="Mật khẩu" />
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                    <label class="form-check-label text-muted" for="exampleCheck1"
+                      >Ghi nhớ đăng nhập</label
+                    >
+                  </div>
+                  <div class="form-option mb-3 mt-3 d-flex justify-content-between">
+                    <a href="">Quên mật khẩu</a>
+                    <a href="">Đăng nhập bằng OTP</a>
+                  </div>
+                  <button class="Auth-login-Button auth-button">Đăng nhập</button>
+                </form>
               </div>
-            </div>
-            <div class="form-group row">
-              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-              <div class="col-sm-10">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="inputPassword3"
-                  placeholder="Password"
-                />
-              </div>
-            </div>
-            <fieldset class="form-group">
-              <div class="row">
-                <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                <div class="col-sm-10">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="gridRadios"
-                      id="gridRadios1"
-                      value="option1"
-                      checked
-                    />
-                    <label class="form-check-label" for="gridRadios1"> First radio </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="gridRadios"
-                      id="gridRadios2"
-                      value="option2"
-                    />
-                    <label class="form-check-label" for="gridRadios2"> Second radio </label>
-                  </div>
-                  <div class="form-check disabled">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="gridRadios"
-                      id="gridRadios3"
-                      value="option3"
-                      disabled
-                    />
-                    <label class="form-check-label" for="gridRadios3"> Third disabled radio </label>
-                  </div>
+
+              <div class="auth-box auth-register">
+                <h3>Khách hàng mới của IVY moda</h3>
+                <div class="auth-content">
+                  <p>
+                    Nếu bạn chưa có tài khoản trên ivymoda.com, hãy sử dụng tùy chọn này để truy cập
+                    biểu mẫu đăng ký.
+                  </p>
+                </div>
+                <div class="auth-content">
+                  <p>
+                    Bằng cách cung cấp cho IVY moda thông tin chi tiết của bạn, quá trình mua hàng
+                    trên ivymoda.com sẽ là một trải nghiệm thú vị và nhanh chóng hơn!
+                  </p>
+                </div>
+                <div class="login-field">
+                  <button class="Auth-regis-Button auth-button">Đăng ký</button>
                 </div>
               </div>
-            </fieldset>
-            <div class="form-group row">
-              <div class="col-sm-2">Checkbox</div>
-              <div class="col-sm-10">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck1" />
-                  <label class="form-check-label" for="gridCheck1"> Example checkbox </label>
-                </div>
-              </div>
             </div>
-            <div class="form-group row">
-              <div class="col-sm-10">
-                <button type="submit" class="btn btn-primary">Sign in</button>
-              </div>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </main>
