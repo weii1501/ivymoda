@@ -97,3 +97,54 @@
 .input-group-text {
   background-color: white !important;
 }
+.contact__map {
+  margin: 50px 0px;
+}
+.contact__map-info {
+  padding: 20px 10px;
+}
+.contact__map-info h3 {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 20px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.contact__map-info p {
+  text-align: justify;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(129, 121, 121);
+}
+/* .banner_picture {
+  width: 100%;
+  background-image: url(../assets/img/lienhe/banner-lien-he.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 0;
+  background-color: purple;
+  background-position: center;
+  border-radius: 32px 0;
+} */
+.banner_picture {
+  position: relative;
+  overflow: hidden;
+  border-radius: 32px 0;
+}
+.banner_picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease; /* Add a smooth transition effect */
+}
+.banner_picture:hover img {
+  transform: scale(1.1); /* Add a slight zoom effect on hover */
+}
+iframe {
+  transition: transform 0.5s ease;
+}
+iframe:hover {
+  transform: scale(1.1);
+}

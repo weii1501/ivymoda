@@ -588,7 +588,11 @@
             </ol>
           </nav>
         </div>
-
+        <div class="banner mt-3 mb-4">
+          <div class="banner_picture">
+            <img src="../../assets/img/lienhe/banner-lien-he.jpg" alt="" />
+          </div>
+        </div>
         <div class="contact">
           <div class="row">
             <div class="col-4 left-contract-info">
@@ -643,6 +647,7 @@
                   We are here to help and answer any question you might have.Tell us about your
                   issue so we can help you more quickly. We look forward to hearing from you.
                 </p>
+                <div class="error_message"></div>
                 <form action="">
                   <div class="row g-4">
                     <div class="col-md-6 form-group">
@@ -650,7 +655,13 @@
                         <span class="input-group-text"
                           ><i class="fa fa-user-o" aria-hidden="true"></i
                         ></span>
-                        <input type="text" class="form-control" placeholder="Họ và tên" />
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Họ và tên"
+                          required
+                        />
                       </div>
                     </div>
                     <div class="col-md-6 form-group">
@@ -658,7 +669,13 @@
                         <span class="input-group-text"
                           ><i class="fa fa-phone" aria-hidden="true"></i
                         ></span>
-                        <input type="text" class="form-control" placeholder="Điện thoại" />
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="phone"
+                          placeholder="Điện thoại"
+                          required
+                        />
                       </div>
                     </div>
                     <div class="col-md-6 form-group">
@@ -666,7 +683,13 @@
                         <span class="input-group-text"
                           ><i class="fa fa-envelope-o" aria-hidden="true"></i
                         ></span>
-                        <input type="text" class="form-control" placeholder="Địa chỉ email" />
+                        <input
+                          type="text"
+                          id="mail"
+                          class="form-control"
+                          placeholder="Địa chỉ email"
+                          required
+                        />
                       </div>
                     </div>
                     <div class="col-md-6 form-group">
@@ -674,7 +697,7 @@
                         <span class="input-group-text"
                           ><i class="fa fa-bookmark-o" aria-hidden="true"></i
                         ></span>
-                        <input type="text" class="form-control" placeholder="Chủ đề" />
+                        <input type="text" class="form-control" placeholder="Chủ đề" required />
                       </div>
                     </div>
                     <div class="col-md-12">
@@ -697,7 +720,12 @@
                         <span class="input-group-text"
                           ><i class="fa fa-lock" aria-hidden="true"></i
                         ></span>
-                        <input type="text" class="form-control" placeholder="Nhập mã captcha" />
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Nhập mã captcha"
+                          required
+                        />
                       </div>
                     </div>
                     <div class="col-md-6 form-group">
@@ -708,6 +736,35 @@
                   </div>
                   <button class="btn-contact mt-4">GỬI</button>
                 </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact__map">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="contact__map-info">
+                <h3>Find us on Google Maps</h3>
+                <p>
+                  IVY moda là thương hiệu thời trang Việt Nam với mong muốn đem lại vẻ đẹp hiện đại
+                  và sự tự tin cho khách hàng, thông qua các dòng sản phẩm thời trang thể hiện cá
+                  tính và xu hướng. Một trong những “tôn chỉ” về thiết kế của IVY moda chính là sự
+                  đa dạng, với mong muốn mang đến cho người mặc những sản phẩm phù hợp nhất với
+                  ngoại hình và quan trọng hơn cả là cá tính của chính mình.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="contact__map-gg">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31345.157633276187!2d106.77314300906033!3d10.876596663796548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527587e9ad5bf%3A0xafa66f9c8be3c91!2sUniversity%20of%20Information%20Technology%20-%20VNUHCM!5e0!3m2!1sen!2s!4v1701181644985!5m2!1sen!2s"
+                  width="850px"
+                  height="350"
+                  style="border-radius: 20px 0px"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
           </div>
