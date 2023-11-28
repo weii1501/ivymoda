@@ -1,0 +1,48 @@
+/* Style for list__menu-items */
+.list__menu-items {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  margin-bottom: 5px;
+}
+
+/* Style for sub-menu-box */
+.sub-menu-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+/* Style for size__box */
+.size__box {
+  margin: 5px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+/* Additional styles for better visualization */
+.size__box-tittle {
+  font-size: 14px;
+  color: #333;
+}
+
+.tittle-menu {
+  margin: 0;
+  padding: 10px;
+  background-color: #ddd;
+}
+
+/* Style for the expand/collapse icon */
+.fa-plus {
+  margin-left: 5px;
+  transition: transform 0.3s;
+}
+
+/* Style for the rotated expand/collapse icon */
+.list__menu-items.active .fa-plus {
+  transform: rotate(45deg);
+}
