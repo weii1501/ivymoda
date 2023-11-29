@@ -2541,6 +2541,16 @@ input[type=number] {
     color: #221F20;
 }
 
+.main-rules {
+    margin-bottom: 40px;
+}
+
+.main-complaints {
+    margin-bottom: 57px;
+}
+
+
+
 .main-rules .title-policy {
     margin-bottom: 28px;
 }
@@ -2549,6 +2559,10 @@ input[type=number] {
     margin-bottom: 68px;
 }
 
+.main-policy {
+    width: calc( 100% - 420px );
+    padding-left: 30px;
+}
 
 .title-policy {
     font-weight: 600;
@@ -2609,5 +2623,60 @@ input[type=number] {
 
 .content-policy .height-24 {
     height: 24px;
+}
+
+.companion {
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.left-companion {
+    max-width: 760px;
+    width: 100%;
+}
+
+.companion-img {
+    border-radius: 64px 0px;
+    overflow: hidden;
+}
+
+.companion-img img {
+    display: block;
+}
+
+.right-companion {
+    width: calc( 100% - 760px );
+    padding-left: 170px;
+}
+
+.right-companion h3 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 32px;
+    text-align: justify;
+    color: #221F20;
+    margin-bottom: 24px;
+    display: block;
+}
+
+.right-companion p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #6C6D70;
+    max-width: 670px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.hotline-companion a {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F7F8F9;
+    padding: 12px 24px;
+    background: #221F20;
 }
 
