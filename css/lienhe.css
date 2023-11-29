@@ -1,0 +1,150 @@
+/*--BREADCUMB _COMPONENT---*/
+
+.breadcrumb-element {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid #f7f8f9;
+}
+
+.breadcrumb-item a {
+  color: black;
+  font-size: 14px;
+  line-height: 24px;
+}
+.breadcrumb-item:first-child a {
+  color: #6c6d70;
+}
+
+/*---left contacts---*/
+.contract__info {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.contract__info-item {
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e7e8e9;
+  height: 120px;
+  border-radius: 30px 0 0 0;
+}
+.icon-item {
+  max-width: 70px;
+  height: 70px;
+  display: flex;
+  flex: 0 0 70px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f8f9;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #221f20;
+}
+.detailInfo-item {
+  margin-left: 25px;
+}
+.detailInfo-item h4 {
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+.detailInfo-item p {
+  font-size: 13px;
+  line-height: 16px;
+}
+.btn-contact {
+  width: 25%;
+  font-weight: 600;
+  text-transform: uppercase;
+  height: 48px;
+  cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 16px 0px;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #221f20;
+  color: #f7f8f9;
+  border: 1px solid transparent;
+}
+.btn-contact:hover {
+  background-color: #f7f8f9;
+  color: #221f20;
+  border-color: #221f20;
+}
+.contact-form {
+  padding: 40px;
+  border: 1px solid #e7e8e9;
+  border-radius: 32px 0px;
+}
+.contact-form h3 {
+  font-weight: 600;
+  font-size: 30px;
+}
+.contact-form p {
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(129, 121, 121);
+}
+.input-group input {
+  padding: 10px;
+  border-left: none !important;
+}
+.input-group-text {
+  background-color: white !important;
+}
+.contact__map {
+  margin: 50px 0px;
+}
+.contact__map-info {
+  padding: 20px 10px;
+}
+.contact__map-info h3 {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 20px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.contact__map-info p {
+  text-align: justify;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(129, 121, 121);
+}
+/* .banner_picture {
+  width: 100%;
+  background-image: url(../assets/img/lienhe/banner-lien-he.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 0;
+  background-color: purple;
+  background-position: center;
+  border-radius: 32px 0;
+} */
+.banner_picture {
+  position: relative;
+  overflow: hidden;
+  border-radius: 32px 0;
+}
+.banner_picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease; /* Add a smooth transition effect */
+}
+.banner_picture:hover img {
+  transform: scale(1.1); /* Add a slight zoom effect on hover */
+}
+iframe {
+  transition: transform 0.5s ease;
+}
+iframe:hover {
+  transform: scale(1.1);
+}

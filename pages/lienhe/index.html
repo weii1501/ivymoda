@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IVAMODA</title>
     <link rel="stylesheet" href="../../css/main.css" />
-    <link rel="stylesheet" href="../../css/login.css" />
+    <link rel="stylesheet" href="../../css/lienhe.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="../../css/fontawesome-free-6.4.2-web/css/all.css" />
@@ -580,74 +580,191 @@
     <!-- main -->
     <main id="main" class="site-main">
       <div class="container">
-        <div class="auth">
-          <div class="auth-container">
-            <div class="auth-row">
-              <div class="auth-box auth-login">
-                <h3>Bạn đã có tài khoản IVY</h3>
-                <div class="auth-content">
-                  <p>
-                    Nếu bạn đã có tài khoản, hãy đăng nhập để tích lũy điểm thành viên và nhận được
-                    những ưu đãi tốt hơn!
-                  </p>
+        <div class="container-breadcrumb">
+          <nav style="--bs-breadcrumb-divider: '-'" aria-label="breadcrumb">
+            <ol class="breadcrumb py-3">
+              <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Liên hệ</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="banner mt-3 mb-4">
+          <div class="banner_picture">
+            <img src="../../assets/img/lienhe/banner-lien-he.jpg" alt="" />
+          </div>
+        </div>
+        <div class="contact">
+          <div class="row">
+            <div class="col-4 left-contract-info">
+              <div class="contract__info">
+                <div class="contract__info-item">
+                  <div class="icon-item">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  </div>
+                  <div class="detailInfo-item">
+                    <h4>Địa chỉ</h4>
+                    <p>
+                      Tầng 14, Toà nhà Hapulico Complex 24T- 85 Vũ Trọng Phụng - Quận Thanh Xuân, HN
+                    </p>
+                  </div>
                 </div>
-                <!-- <form class="auth-form-login">
-                  
-                  <div class="login-field">
-                    <input type="text" placeholder="Email/SĐT" />
+                <div class="contract__info-item">
+                  <div class="icon-item">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
                   </div>
-                  <div class="login-field">
-                    <input type="password" placeholder="Mật khẩu" />
+                  <div class="detailInfo-item">
+                    <h4>Email</h4>
+                    <p>saleadmin@ivy.com.vn</p>
                   </div>
-                  <div class="login-check">
-                    <input type="checkbox" />
-                    <label for="">Ghi nhớ đăng nhập</label>
+                </div>
+                <div class="contract__info-item">
+                  <div class="icon-item">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
                   </div>
-                  <div class="login-field">
-                    <span><a href="">Quên mật khẩu</a></span>
-                    <span><a href="">Đăng nhập bằng OTP</a></span>
+                  <div class="detailInfo-item">
+                    <h4>Mua hàng online</h4>
+                    <p>+ (84) 24 6662 3434</p>
                   </div>
-                  <div class="login-field">
+                </div>
+                <div class="contract__info-item">
+                  <div class="icon-item">
+                    <i class="fa fa-headphones" aria-hidden="true"></i>
                   </div>
-                </form> -->
+                  <div class="detailInfo-item">
+                    <h4>Chăm sóc khách hàng</h4>
+                    <p>
+                      Email: cskh@ivy.com.vn Hotline: 0905 89 86 83 Thứ Hai đến Thứ Bảy, từ 8:00 đến
+                      17:30
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 right-contact-form">
+              <div class="contact-form">
+                <h3>Email to IVYmoda</h3>
+                <p>
+                  We are here to help and answer any question you might have.Tell us about your
+                  issue so we can help you more quickly. We look forward to hearing from you.
+                </p>
+                <div class="error_message"></div>
                 <form action="">
-                  <div class="mb-3">
-                    <input type="text" class="form-control p-2" placeholder="Email/SĐT" />
+                  <div class="row g-4">
+                    <div class="col-md-6 form-group">
+                      <div class="input-group">
+                        <span class="input-group-text"
+                          ><i class="fa fa-user-o" aria-hidden="true"></i
+                        ></span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Họ và tên"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <div class="input-group">
+                        <span class="input-group-text"
+                          ><i class="fa fa-phone" aria-hidden="true"></i
+                        ></span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="phone"
+                          placeholder="Điện thoại"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <div class="input-group">
+                        <span class="input-group-text"
+                          ><i class="fa fa-envelope-o" aria-hidden="true"></i
+                        ></span>
+                        <input
+                          type="text"
+                          id="mail"
+                          class="form-control"
+                          placeholder="Địa chỉ email"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <div class="input-group">
+                        <span class="input-group-text"
+                          ><i class="fa fa-bookmark-o" aria-hidden="true"></i
+                        ></span>
+                        <input type="text" class="form-control" placeholder="Chủ đề" required />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <div class="form-floating">
+                          <textarea
+                            class="form-control"
+                            placeholder="Leave a comment here"
+                            id="floatingTextarea2"
+                            style="height: 100px"
+                          ></textarea>
+                          <label for="floatingTextarea2">
+                            <i class="fa fa-comment-o" aria-hidden="true"></i> Nội dung...</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <div class="input-group">
+                        <span class="input-group-text"
+                          ><i class="fa fa-lock" aria-hidden="true"></i
+                        ></span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Nhập mã captcha"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <div class="captcha">
+                        <img src="../../assets/img/datmua/captcha.png" alt="" />
+                      </div>
+                    </div>
                   </div>
-                  <div class="mb-3">
-                    <input type="password" class="form-control p-2" placeholder="Mật khẩu" />
-                  </div>
-                  <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                    <label class="form-check-label text-muted" for="exampleCheck1"
-                      >Ghi nhớ đăng nhập</label
-                    >
-                  </div>
-                  <div class="form-option mb-3 mt-3 d-flex justify-content-between">
-                    <a href="">Quên mật khẩu</a>
-                    <a href="">Đăng nhập bằng OTP</a>
-                  </div>
-                  <button class="Auth-login-Button auth-button">Đăng nhập</button>
+                  <button class="btn-contact mt-4">GỬI</button>
                 </form>
               </div>
-
-              <div class="auth-box auth-register">
-                <h3>Khách hàng mới của IVY moda</h3>
-                <div class="auth-content">
-                  <p>
-                    Nếu bạn chưa có tài khoản trên ivymoda.com, hãy sử dụng tùy chọn này để truy cập
-                    biểu mẫu đăng ký.
-                  </p>
-                </div>
-                <div class="auth-content">
-                  <p>
-                    Bằng cách cung cấp cho IVY moda thông tin chi tiết của bạn, quá trình mua hàng
-                    trên ivymoda.com sẽ là một trải nghiệm thú vị và nhanh chóng hơn!
-                  </p>
-                </div>
-                <div class="login-field">
-                  <button class="Auth-regis-Button auth-button">Đăng ký</button>
-                </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact__map">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="contact__map-info">
+                <h3>Find us on Google Maps</h3>
+                <p>
+                  IVY moda là thương hiệu thời trang Việt Nam với mong muốn đem lại vẻ đẹp hiện đại
+                  và sự tự tin cho khách hàng, thông qua các dòng sản phẩm thời trang thể hiện cá
+                  tính và xu hướng. Một trong những “tôn chỉ” về thiết kế của IVY moda chính là sự
+                  đa dạng, với mong muốn mang đến cho người mặc những sản phẩm phù hợp nhất với
+                  ngoại hình và quan trọng hơn cả là cá tính của chính mình.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="contact__map-gg">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31345.157633276187!2d106.77314300906033!3d10.876596663796548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527587e9ad5bf%3A0xafa66f9c8be3c91!2sUniversity%20of%20Information%20Technology%20-%20VNUHCM!5e0!3m2!1sen!2s!4v1701181644985!5m2!1sen!2s"
+                  width="850px"
+                  height="350"
+                  style="border-radius: 20px 0px"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
           </div>
