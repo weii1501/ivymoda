@@ -24,3 +24,143 @@
 .side-Bar__side-box ul {
   padding-left: 0 !important;
 }
+
+/*--products-right---*/
+
+/*--Top products---*/
+.top-product {
+  position: relative;
+  margin-bottom: 20px;
+}
+.top-product h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #221f20;
+  text-transform: uppercase;
+  margin-left: 15px;
+}
+.filter-product {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.filter-menu {
+  display: inline-block;
+  margin-right: 16px;
+  position: relative;
+}
+.filter-menu > span {
+  width: 250px;
+  background-color: FFFFFFF;
+  font-size: 14px;
+  line-height: 16px;
+  border: 1px solid #e7e8e9;
+  border-radius: 24px;
+  padding: 12px 40px 12px 16px;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  color: #221f20;
+}
+.filter-menu > span > i {
+  position: absolute;
+  top: 20%;
+  right: 13px;
+}
+.list-menu {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #e7e8e9;
+  border-radius: 10px;
+  padding: 15px 10px;
+  z-index: 4;
+}
+
+.list-items > span {
+  font-size: 14px;
+  line-height: 40px;
+  color: #221f20;
+}
+
+/* main product */
+.list__product {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list__product-cate-item {
+  width: 25%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+.product-box {
+  position: relative;
+}
+.image-product {
+  margin-bottom: 17px;
+  position: relative;
+  overflow: hidden;
+}
+.image-product img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.infomation-product h3 {
+  color: #4b4b4d;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.price-product span {
+  color: #3e3e3f;
+  font-weight: 600;
+}
+.add-cart-product i {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #221f20;
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  border-radius: 8px 0;
+  border: 1px solid transparent;
+}
+.add-cart-product i:hover {
+  color: #221f20;
+  background: #fff;
+  border: 1px solid #221f20;
+}
+.size-menu {
+  position: absolute;
+  bottom: 32px;
+  right: 0;
+  background: #ffffff;
+  border: 1px solid #e7e8e9;
+}
+
+.size-menu {
+  background-color: #ffffff;
+}
+.size-menu > ul {
+  padding-left: 0;
+}
+.bt-size-item {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #221f20;
+  padding: 12px 50px;
+  text-align: center;
+  margin: 0 auto;
+}
