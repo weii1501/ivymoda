@@ -40,6 +40,10 @@
   color: #221f20;
   margin-bottom: 18px;
 }
+.content__order-left-element a {
+  text-decoration: none;
+  color: inherit;
+}
 .content__order-left-element button {
   font-weight: 600;
   text-transform: uppercase;
@@ -221,4 +225,39 @@
   margin-bottom: 32px;
   font-size: 14px;
   line-height: 16px;
+}
+.checkout-process-bar ul:before {
+  position: absolute;
+  height: 4px;
+  background-color: #e7e8e9;
+  content: "";
+  width: 100%;
+  top: 10px;
+}
+
+.checkout-process-bar ul li.active:before {
+  width: 18px;
+  height: 18px;
+  top: 3px;
+  border: 2px solid white;
+  z-index: 14;
+  background-color: #221f20;
+}
+.checkout-process-bar ul li.done:after {
+  content: "";
+  width: 0px !important;
+  background-color: white !important;
+  height: 4px;
+  top: 10px;
+  position: absolute;
+  right: 48px;
+}
+.checkout-process-bar ul li.active:after {
+  content: "";
+  width: 225px !important;
+  background-color: #221f20;
+  height: 4px;
+  top: 10px;
+  position: absolute;
+  right: 48px;
 }
