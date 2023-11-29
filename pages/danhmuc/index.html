@@ -576,9 +576,11 @@
           <div class="product-box row">
             <div class="col-md-3 side-bar-product">
               <div class="side-Bar__side-box">
-                <ul class="list__menu">
-                  <li class="list__menu-items">
-                    <p class="tittle-menu">Size <i class="fa fa-plus" aria-hidden="true"></i></p>
+                <ul class="list__side">
+                  <li class="list__side-items">
+                    <p class="tittle-menu">
+                      Size <span><i class="fa fa-plus" aria-hidden="true"></i></span>
+                    </p>
                     <div class="sub-menu-box">
                       <label for="" class="size__box"><span class="size__box-tittle">S</span></label>
                       <label for="" class="size__box"><span class="size__box-tittle">M</span></label>
@@ -587,15 +589,40 @@
                       <label for="" class="size__box"><span class="size__box-tittle">XXL</span></label>
                     </div>
                   </li>
-                  <li class="list__menu-items">Màu sắc</li>
-                  <li class="list__menu-items">Mức giá</li>
-                  <li class="list__menu-items">Mức chiết khấu</li>
-                  <li class="list__menu-items">Nâng cao</li>
+                  <li class="list__side-items">
+                    <p class="tittle-menu">
+                      Màu sắc <span><i class="fa fa-plus" aria-hidden="true"></i></span>
+                    </p>
+                    <div class="sub-menu-box">
+                      <label for="" class="size__box-color"><span class="size__box-red"></span></label>
+                      <label for="" class="size__box-color"><span class="size__box-orange"></span></label>
+                      <label for="" class="size__box-color"><span class="size__box-green"></span></label>
+                      <label for="" class="size__box-color"><span class="size__box-blue"></span></label>
+                      <label for="" class="size__box-color"><span class="size__box-purple"></span></label>
+                    </div>
+                  </li>
+                  <li class="list__side-items">
+                    <p class="tittle-menu">
+                      Mức giá
+                      <span><i class="fa fa-plus" aria-hidden="true"></i></span>
+                    </p>
+                    <div class="sub-menu-box">
+                      <div class="slidecontainer">
+                        <input type="range" min="100" max="2000" step="10" value="2000" class="slider" id="myRange" />
+                        <p>Giá đến: <span id="demo"></span>.000Đ</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list__side-items">
+                    <p class="tittle-menu">
+                      Mức chiếu khấu <span><i class="fa fa-plus" aria-hidden="true"></i></span>
+                    </p>
+                  </li>
                 </ul>
                 <div class="side-bar__filter-box">
                   <div class="row">
-                    <div class="col-md-6 filter-button">BỎ LỌC</div>
-                    <div class="col-md-6 filter-button">LỌC</div>
+                    <div class="col-md-6"><button class="filter-button">BỎ LỌC</button></div>
+                    <div class="col-md-6"><button class="filter-button btn-selected">LỌC</button></div>
                   </div>
                 </div>
               </div>
@@ -607,9 +634,14 @@
                   <div class="filter-menu">
                     <span>Sắp xếp theo <i class="fa fa-caret-down fa-2x" aria-hidden="true"></i></span>
                     <div class="list-menu">
-                      <div class="list-items"><span>Mặc định</span></div>
+                      <div class="list-items">
+                        <span>Mặc định</span>
+                      </div>
                       <div class="list-items"><span>Mới nhất</span></div>
-                      <div class="list-items"><span>Mặc định</span></div>
+                      <div class="list-items"><span>Được mua nhiều nhất</span></div>
+                      <div class="list-items"><span>Được yêu thích nhất</span></div>
+                      <div class="list-items"><span>Giá: cao đến thấp</span></div>
+                      <div class="list-items"><span>Giá thấp đến cao</span></div>
                     </div>
                   </div>
                 </div>
@@ -620,6 +652,127 @@
                     <div class="product-box">
                       <div class="image-product">
                         <a href="#"><img src="../../assets/img/products/pro-cate1.jpg" alt="" /></a>
+                        <a href="#"><img class="top-image" src="../../assets/img/products/cate2.jpg" alt="" /></a>
+                      </div>
+                      <div class="infomation-product">
+                        <div class="color-list">
+                          <div class="list-color">
+                            <ul>
+                              <li>
+                                <a href="#" class="color-picker">
+                                  <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy" />
+                                </a>
+                              </li>
+                              <li class="checked">
+                                <a href="#" class="color-picker">
+                                  <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy" />
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <h3 class="tittle-product">Áo Sơ Mi Lụa Cổ Đổ</h3>
+                        <div class="price-product"><span>990.000đ</span></div>
+                      </div>
+                      <div class="add-cart-product">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                      <div class="size-menu">
+                        <ul>
+                          <li><span class="bt-size-item">S</span></li>
+                          <li><span class="bt-size-item">M</span></li>
+                          <li><span class="bt-size-item">L</span></li>
+                          <li><span class="bt-size-item">XL</span></li>
+                          <li><span class="bt-size-item">XXL</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list__product-cate-item">
+                    <div class="product-box">
+                      <div class="image-product">
+                        <a href="#"><img src="../../assets/img/products/pro-cate3.jpg" alt="" /></a>
+                        <a href="#"><img class="top-image" src="../../assets/img/products/top-cate3-2.jpg" alt="" /></a>
+                      </div>
+                      <div class="infomation-product">
+                        <div class="color-list">
+                          <div class="list-color">
+                            <ul>
+                              <li>
+                                <a href="#" class="color-picker">
+                                  <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy" />
+                                </a>
+                              </li>
+                              <li class="checked">
+                                <a href="#" class="color-picker">
+                                  <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy" />
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <h3 class="tittle-product">Áo Sơ Mi Lụa Cổ Đổ</h3>
+                        <div class="price-product"><span>990.000đ</span></div>
+                      </div>
+                      <div class="add-cart-product">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                      <div class="size-menu">
+                        <ul>
+                          <li><span class="bt-size-item">S</span></li>
+                          <li><span class="bt-size-item">M</span></li>
+                          <li><span class="bt-size-item">L</span></li>
+                          <li><span class="bt-size-item">XL</span></li>
+                          <li><span class="bt-size-item">XXL</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list__product-cate-item">
+                    <div class="product-box">
+                      <div class="image-product">
+                        <a href="#"><img src="../../assets/img/products/pro-cate4.jpg" alt="" /></a>
+                        <a href="#"><img class="top-image" src="../../assets/img/products/top-cate4.jpg" alt="" /></a>
+                      </div>
+                      <div class="infomation-product">
+                        <div class="color-list">
+                          <div class="list-color">
+                            <ul>
+                              <li>
+                                <a href="#" class="color-picker">
+                                  <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy" />
+                                </a>
+                              </li>
+                              <li class="checked">
+                                <a href="#" class="color-picker">
+                                  <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy" />
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <h3 class="tittle-product">Áo Sơ Mi Lụa Cổ Đổ</h3>
+                        <div class="price-product"><span>990.000đ</span></div>
+                      </div>
+                      <div class="add-cart-product">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                      <div class="size-menu">
+                        <ul>
+                          <li><span class="bt-size-item">S</span></li>
+                          <li><span class="bt-size-item">M</span></li>
+                          <li><span class="bt-size-item">L</span></li>
+                          <li><span class="bt-size-item">XL</span></li>
+                          <li><span class="bt-size-item">XXL</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list__product-cate-item">
+                    <div class="product-box">
+                      <div class="image-product">
+                        <a href="#"><img src="../../assets/img/products/pro-cate5.jpg" alt="" /></a>
+                        <a href="#"><img class="top-image" src="../../assets/img/products/top-cate5.jpg" alt="" /></a>
                       </div>
                       <div class="infomation-product">
                         <div class="color-list">
@@ -659,6 +812,127 @@
                     <div class="product-box">
                       <div class="image-product">
                         <a href="#"><img src="../../assets/img/products/pro-cate1.jpg" alt="" /></a>
+                        <a href="#"><img class="top-image" src="../../assets/img/products/cate2.jpg" alt="" /></a>
+                      </div>
+                      <div class="infomation-product">
+                        <div class="color-list">
+                          <div class="list-color">
+                            <ul>
+                              <li>
+                                <a href="#" class="color-picker">
+                                  <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy" />
+                                </a>
+                              </li>
+                              <li class="checked">
+                                <a href="#" class="color-picker">
+                                  <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy" />
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <h3 class="tittle-product">Áo Sơ Mi Lụa Cổ Đổ</h3>
+                        <div class="price-product"><span>990.000đ</span></div>
+                      </div>
+                      <div class="add-cart-product">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                      <div class="size-menu">
+                        <ul>
+                          <li><span class="bt-size-item">S</span></li>
+                          <li><span class="bt-size-item">M</span></li>
+                          <li><span class="bt-size-item">L</span></li>
+                          <li><span class="bt-size-item">XL</span></li>
+                          <li><span class="bt-size-item">XXL</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list__product-cate-item">
+                    <div class="product-box">
+                      <div class="image-product">
+                        <a href="#"><img src="../../assets/img/products/pro-cate3.jpg" alt="" /></a>
+                        <a href="#"><img class="top-image" src="../../assets/img/products/top-cate3-2.jpg" alt="" /></a>
+                      </div>
+                      <div class="infomation-product">
+                        <div class="color-list">
+                          <div class="list-color">
+                            <ul>
+                              <li>
+                                <a href="#" class="color-picker">
+                                  <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy" />
+                                </a>
+                              </li>
+                              <li class="checked">
+                                <a href="#" class="color-picker">
+                                  <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy" />
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <h3 class="tittle-product">Áo Sơ Mi Lụa Cổ Đổ</h3>
+                        <div class="price-product"><span>990.000đ</span></div>
+                      </div>
+                      <div class="add-cart-product">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                      <div class="size-menu">
+                        <ul>
+                          <li><span class="bt-size-item">S</span></li>
+                          <li><span class="bt-size-item">M</span></li>
+                          <li><span class="bt-size-item">L</span></li>
+                          <li><span class="bt-size-item">XL</span></li>
+                          <li><span class="bt-size-item">XXL</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list__product-cate-item">
+                    <div class="product-box">
+                      <div class="image-product">
+                        <a href="#"><img src="../../assets/img/products/pro-cate4.jpg" alt="" /></a>
+                        <a href="#"><img class="top-image" src="../../assets/img/products/top-cate4.jpg" alt="" /></a>
+                      </div>
+                      <div class="infomation-product">
+                        <div class="color-list">
+                          <div class="list-color">
+                            <ul>
+                              <li>
+                                <a href="#" class="color-picker">
+                                  <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy" />
+                                </a>
+                              </li>
+                              <li class="checked">
+                                <a href="#" class="color-picker">
+                                  <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy" />
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <h3 class="tittle-product">Áo Sơ Mi Lụa Cổ Đổ</h3>
+                        <div class="price-product"><span>990.000đ</span></div>
+                      </div>
+                      <div class="add-cart-product">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                      <div class="size-menu">
+                        <ul>
+                          <li><span class="bt-size-item">S</span></li>
+                          <li><span class="bt-size-item">M</span></li>
+                          <li><span class="bt-size-item">L</span></li>
+                          <li><span class="bt-size-item">XL</span></li>
+                          <li><span class="bt-size-item">XXL</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list__product-cate-item">
+                    <div class="product-box">
+                      <div class="image-product">
+                        <a href="#"><img src="../../assets/img/products/pro-cate5.jpg" alt="" /></a>
+                        <a href="#"><img class="top-image" src="../../assets/img/products/top-cate5.jpg" alt="" /></a>
                       </div>
                       <div class="infomation-product">
                         <div class="color-list">
@@ -698,6 +972,127 @@
                     <div class="product-box">
                       <div class="image-product">
                         <a href="#"><img src="../../assets/img/products/pro-cate1.jpg" alt="" /></a>
+                        <a href="#"><img class="top-image" src="../../assets/img/products/cate2.jpg" alt="" /></a>
+                      </div>
+                      <div class="infomation-product">
+                        <div class="color-list">
+                          <div class="list-color">
+                            <ul>
+                              <li>
+                                <a href="#" class="color-picker">
+                                  <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy" />
+                                </a>
+                              </li>
+                              <li class="checked">
+                                <a href="#" class="color-picker">
+                                  <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy" />
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <h3 class="tittle-product">Áo Sơ Mi Lụa Cổ Đổ</h3>
+                        <div class="price-product"><span>990.000đ</span></div>
+                      </div>
+                      <div class="add-cart-product">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                      <div class="size-menu">
+                        <ul>
+                          <li><span class="bt-size-item">S</span></li>
+                          <li><span class="bt-size-item">M</span></li>
+                          <li><span class="bt-size-item">L</span></li>
+                          <li><span class="bt-size-item">XL</span></li>
+                          <li><span class="bt-size-item">XXL</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list__product-cate-item">
+                    <div class="product-box">
+                      <div class="image-product">
+                        <a href="#"><img src="../../assets/img/products/pro-cate3.jpg" alt="" /></a>
+                        <a href="#"><img class="top-image" src="../../assets/img/products/top-cate3-2.jpg" alt="" /></a>
+                      </div>
+                      <div class="infomation-product">
+                        <div class="color-list">
+                          <div class="list-color">
+                            <ul>
+                              <li>
+                                <a href="#" class="color-picker">
+                                  <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy" />
+                                </a>
+                              </li>
+                              <li class="checked">
+                                <a href="#" class="color-picker">
+                                  <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy" />
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <h3 class="tittle-product">Áo Sơ Mi Lụa Cổ Đổ</h3>
+                        <div class="price-product"><span>990.000đ</span></div>
+                      </div>
+                      <div class="add-cart-product">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                      <div class="size-menu">
+                        <ul>
+                          <li><span class="bt-size-item">S</span></li>
+                          <li><span class="bt-size-item">M</span></li>
+                          <li><span class="bt-size-item">L</span></li>
+                          <li><span class="bt-size-item">XL</span></li>
+                          <li><span class="bt-size-item">XXL</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list__product-cate-item">
+                    <div class="product-box">
+                      <div class="image-product">
+                        <a href="#"><img src="../../assets/img/products/pro-cate4.jpg" alt="" /></a>
+                        <a href="#"><img class="top-image" src="../../assets/img/products/top-cate4.jpg" alt="" /></a>
+                      </div>
+                      <div class="infomation-product">
+                        <div class="color-list">
+                          <div class="list-color">
+                            <ul>
+                              <li>
+                                <a href="#" class="color-picker">
+                                  <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy" />
+                                </a>
+                              </li>
+                              <li class="checked">
+                                <a href="#" class="color-picker">
+                                  <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy" />
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <h3 class="tittle-product">Áo Sơ Mi Lụa Cổ Đổ</h3>
+                        <div class="price-product"><span>990.000đ</span></div>
+                      </div>
+                      <div class="add-cart-product">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                      <div class="size-menu">
+                        <ul>
+                          <li><span class="bt-size-item">S</span></li>
+                          <li><span class="bt-size-item">M</span></li>
+                          <li><span class="bt-size-item">L</span></li>
+                          <li><span class="bt-size-item">XL</span></li>
+                          <li><span class="bt-size-item">XXL</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list__product-cate-item">
+                    <div class="product-box">
+                      <div class="image-product">
+                        <a href="#"><img src="../../assets/img/products/pro-cate5.jpg" alt="" /></a>
+                        <a href="#"><img class="top-image" src="../../assets/img/products/top-cate5.jpg" alt="" /></a>
                       </div>
                       <div class="infomation-product">
                         <div class="color-list">
@@ -737,6 +1132,7 @@
                     <div class="product-box">
                       <div class="image-product">
                         <a href="#"><img src="../../assets/img/products/pro-cate1.jpg" alt="" /></a>
+                        <a href="#"><img class="top-image" src="../../assets/img/products/cate2.jpg" alt="" /></a>
                       </div>
                       <div class="infomation-product">
                         <div class="color-list">
@@ -775,7 +1171,8 @@
                   <div class="list__product-cate-item">
                     <div class="product-box">
                       <div class="image-product">
-                        <a href="#"><img src="../../assets/img/products/pro-cate1.jpg" alt="" /></a>
+                        <a href="#"><img src="../../assets/img/products/pro-cate3.jpg" alt="" /></a>
+                        <a href="#"><img class="top-image" src="../../assets/img/products/top-cate3-2.jpg" alt="" /></a>
                       </div>
                       <div class="infomation-product">
                         <div class="color-list">
@@ -814,7 +1211,8 @@
                   <div class="list__product-cate-item">
                     <div class="product-box">
                       <div class="image-product">
-                        <a href="#"><img src="../../assets/img/products/pro-cate1.jpg" alt="" /></a>
+                        <a href="#"><img src="../../assets/img/products/pro-cate4.jpg" alt="" /></a>
+                        <a href="#"><img class="top-image" src="../../assets/img/products/top-cate4.jpg" alt="" /></a>
                       </div>
                       <div class="infomation-product">
                         <div class="color-list">
@@ -853,46 +1251,8 @@
                   <div class="list__product-cate-item">
                     <div class="product-box">
                       <div class="image-product">
-                        <a href="#"><img src="../../assets/img/products/pro-cate1.jpg" alt="" /></a>
-                      </div>
-                      <div class="infomation-product">
-                        <div class="color-list">
-                          <div class="list-color">
-                            <ul>
-                              <li>
-                                <a href="#" class="color-picker">
-                                  <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy" />
-                                </a>
-                              </li>
-                              <li class="checked">
-                                <a href="#" class="color-picker">
-                                  <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy" />
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <h3 class="tittle-product">Áo Sơ Mi Lụa Cổ Đổ</h3>
-                        <div class="price-product"><span>990.000đ</span></div>
-                      </div>
-                      <div class="add-cart-product">
-                        <i class="fa-solid fa-bag-shopping"></i>
-                      </div>
-                      <div class="size-menu">
-                        <ul>
-                          <li><span class="bt-size-item">S</span></li>
-                          <li><span class="bt-size-item">M</span></li>
-                          <li><span class="bt-size-item">L</span></li>
-                          <li><span class="bt-size-item">XL</span></li>
-                          <li><span class="bt-size-item">XXL</span></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="list__product-cate-item">
-                    <div class="product-box">
-                      <div class="image-product">
-                        <a href="#"><img src="../../assets/img/products/pro-cate1.jpg" alt="" /></a>
+                        <a href="#"><img src="../../assets/img/products/pro-cate5.jpg" alt="" /></a>
+                        <a href="#"><img class="top-image" src="../../assets/img/products/top-cate5.jpg" alt="" /></a>
                       </div>
                       <div class="infomation-product">
                         <div class="color-list">
@@ -929,7 +1289,16 @@
                     </div>
                   </div>
                 </div>
-                <div class="list-nav-page"></div>
+                <ul class="list-nav-page">
+                  <li><a href="#">«</a></li>
+                  <li class="active-page"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">»</a></li>
+                  <li><a href="#">Trang cuối</a></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -1134,7 +1503,8 @@
         $(".sub-menu-box").hide();
 
         // Add click event handler to list__menu-items
-        $(".list__menu-items").click(function () {
+        $(".list__side-items").click(function () {
+          console.log("submenu");
           // Find the corresponding sub-menu-box and toggle its visibility
           $(this).find(".sub-menu-box").slideToggle();
         });
@@ -1161,6 +1531,14 @@
           sizeMenus.eq(index).slideToggle();
         });
       });
+
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value;
+
+      slider.oninput = function () {
+        output.innerHTML = ` ${this.value}`;
+      };
 
       /*
       Used the index method to get the index of the clicked .add-cart-product.

@@ -17,14 +17,167 @@
   color: #6c6d70;
 }
 
-/*---left contacts---*/
+/*---left side bar---*/
 .side-bar-product {
-  background-color: aquamarine;
 }
 .side-Bar__side-box ul {
   padding-left: 0 !important;
+  margin-right: 20px;
+}
+.list__side {
+  max-height: 500px;
+}
+.list__side-items {
+  border-bottom: 1px solid #f7f8f9;
+  margin-bottom: 16px;
+}
+.tittle-menu {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  cursor: pointer;
 }
 
+/*---submenu---*/
+.sub-menu-box {
+  display: block;
+}
+.size__box {
+  width: 50px;
+  height: auto;
+  text-align: center;
+  margin: 4px 8px;
+}
+.size__box-tittle {
+  display: block;
+  font-size: 12px;
+  /* padding: 8px 10px; */
+  font-weight: 400;
+  background-color: white;
+  color: #221f20;
+  border-radius: 8px 0px;
+  padding: 10px 0px;
+  border: 1px solid #e7e8e9;
+  cursor: pointer;
+}
+
+.size__box-tittle:hover {
+  background-color: #e7e8e9;
+}
+
+.size__box-color {
+  width: 20px;
+  height: 20px;
+  padding: 4px 13px;
+}
+.size__box-color > span {
+  display: inline-block;
+  /* padding: 8px 10px; */
+  width: 15px;
+  height: 15px;
+  color: #221f20;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.size__box-red {
+  background-color: red;
+}
+.size__box-green {
+  background-color: green;
+}
+.size__box-blue {
+  background-color: blue;
+}
+.size__box-purple {
+  background-color: purple;
+}
+.size__box-orange {
+  background-color: orange;
+}
+
+/*testing */
+.slidecontainer {
+  width: 100%;
+  /* background-color: red; */
+  position: relative;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.slider::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04aa6d;
+  cursor: pointer;
+}
+/*--button-sidebar--*/
+.filter-button {
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 80%;
+  height: 48px;
+  cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 16px 0px;
+  font-size: 13px;
+  background-color: #221f20;
+  color: #f7f8f9;
+  border: 1px solid transparent;
+}
+.filter-button:hover {
+  background-color: #f7f8f9;
+  color: #221f20;
+  border-color: #221f20;
+}
+
+.btn-selected {
+  background-color: #f7f8f9;
+  color: #221f20;
+  border-color: #221f20;
+}
+.btn-selected:hover {
+  background-color: #221f20;
+  color: #f7f8f9;
+  border: 1px solid transparent;
+}
 /*--products-right---*/
 
 /*--Top products---*/
@@ -86,6 +239,11 @@
   color: #221f20;
 }
 
+.list-items > span:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
+
 /* main product */
 .list__product {
   display: flex;
@@ -98,11 +256,22 @@
 }
 .product-box {
   position: relative;
+  margin-bottom: 30px;
 }
 .image-product {
   margin-bottom: 17px;
   position: relative;
   overflow: hidden;
+}
+.top-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.top-image:hover {
+  opacity: 1;
+  transition: all 0.5s ease-out;
 }
 .image-product img {
   width: 100%;
@@ -163,4 +332,40 @@
   padding: 12px 50px;
   text-align: center;
   margin: 0 auto;
+}
+.bt-size-item:hover {
+  background-color: #e7e8e9;
+}
+.list-nav-page a {
+  text-decoration: none;
+  color: inherit;
+
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.list-nav-page {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: black;
+}
+.list-nav-page li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #f7f8f9;
+  color: #221f20;
+  border-radius: 8px 0px;
+  padding: 6px 13px;
+  border: 1px solid #656263;
+}
+
+.list-nav-page li:hover {
+  background-color: #221f20;
+  color: #f7f8f9;
+}
+.active-page {
+  background-color: #221f20 !important;
+  color: #f7f8f9 !important;
 }
