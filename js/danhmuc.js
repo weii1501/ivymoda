@@ -1,14 +1,4 @@
 $(document).ready(function () {
-  // Hide sub-menu-box initially
-  $(".sub-menu-box").hide();
-
-  // Add click event handler to list__menu-items
-  $(".list__side-items").click(function () {
-    console.log("submenu");
-    // Find the corresponding sub-menu-box and toggle its visibility
-    $(this).find(".sub-menu-box").slideToggle();
-  });
-
   $(".list-menu").hide();
   $(".filter-product").click(function () {
     console.log("Add Product");
@@ -45,3 +35,13 @@ slider.oninput = function () {
   Used eq(index) to select the corresponding .size-menu element.
     Removed the unnecessary $.each loop, as the click function is already applied to all elements matched by addCartProducts.
 */
+
+$(document).ready((e) => {
+  $(".sub-menu-box").hide();
+
+  $(".list__side-items").click(function () {
+    console.log("submenu");
+
+    $(this).find(".sub-menu-box").slideToggle();
+  });
+});

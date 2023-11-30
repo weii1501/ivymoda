@@ -4,27 +4,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const errorMessageDiv = document.querySelector(".error_message");
 
   form.addEventListener("submit", function (event) {
-    // Prevent the default form submission
     event.preventDefault();
-
-    // Validate the inputs
 
     const phoneInput = document.getElementById("phone");
     const emailInput = document.getElementById("mail");
 
-    // Regular expressions for validation
     const phoneRegex = /^[0-9]{10,11}$/; // Simple phone number validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email validation
 
-    // Flag to track if any validation fails
     let isValid = true;
 
-    // Clear previous error messages
     errorMessageDiv.innerHTML = "";
 
-    // Validate name (Assuming a name must be entered)
-
-    // Validate phone number
     if (!phoneRegex.test(phoneInput.value.trim())) {
       displayError("Lỗi! Số điện thoại không hợp lệ");
       isValid = false;
@@ -36,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
       isValid = false;
     }
 
-    // If all validations pass, you can submit the form
     if (isValid) {
       form.submit();
     }
