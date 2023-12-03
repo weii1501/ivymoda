@@ -38,3 +38,11 @@ function renderCity(data) {
     }
   };
 }
+
+$(document).ready(function () {
+  $(".view-more-cart").hide();
+  $(".btn-view-more").click((e) => {
+    event.preventDefault();
+    $(".view-more-cart").toggle();
+  });
+});
