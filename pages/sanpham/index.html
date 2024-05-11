@@ -1,1408 +1,1475 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IVAMODA</title>
-    <link rel="stylesheet" href="../../css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="../../css/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../../css/fontawesome-free-6.4.2-web/css/all.css" />
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.css"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
     />
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.css" />
+  </head>
+  <body>
     <!-- header -->
     <header id="header" class="site-header">
-        <div class="sub-action sub-action-cart">
-            <div class="top-action">
-                <div type="button" class="btn-close" onclick="closeCart()">
-                    <i class="fa-solid fa-x">x</i>
-                </div>
-                <h3>
-                    Giỏ hàng
-                </h3>
-                <span class="number-cart">2</span>
-            </div>
-
-            <div class="main-action">
-                <!-- item cart -->
-                <div class="item-product-cart d-flex">
-                    <div class="thumb-product-cart">
-                        <img src="../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg" alt="" class="lazy">
-                    </div>
-
-                    <div class="info-product-cart">
-                        <h3>
-                            <a href="#">
-                                Lealia Blazer - Áo blazer nhung trơn
-                            </a>
-                        </h3>
-                        <div class="info-properties d-flex">
-                            <p class="properties-color">Màu sắc: <span style="color: #000;">Đen</span></p>
-                            <p>Size: <span style="text-transform: uppercase">m</span></p>
-                        </div>
-                        <div class="info-price-mini d-flex">
-                            <div class="info-price-quantity d-flex">
-                                <div class="price-quantity-minus price-quantity">
-                                    <i class="fa-solid fa-minus"></i>
-                                </div>
-                                <input type="number" value="1" data-product-sub-id="186719" data-product-index="0">
-                                <div class="price-quantity-plus price-quantity">
-                                    <i class="fa-solid fa-plus"></i>
-                                </div>
-                            </div>
-                            <div class="price-cart-mini">
-                                <ins>
-                                    <span>
-                                        1.862.000₫                             
-                                    </span>
-                                </ins>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- item cart -->
-                <div class="item-product-cart d-flex">
-                    <div class="thumb-product-cart">
-                        <img src="../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg" alt="" class="lazy">
-                    </div>
-
-                    <div class="info-product-cart">
-                        <h3>
-                            <a href="#">
-                                Lealia Blazer - Áo blazer nhung trơn
-                            </a>
-                        </h3>
-                        <div class="info-properties d-flex">
-                            <p class="properties-color">Màu sắc: <span style="color: #000;">Đen</span></p>
-                            <p>Size: <span style="text-transform: uppercase">m</span></p>
-                        </div>
-                        <div class="info-price-mini d-flex">
-                            <div class="info-price-quantity d-flex">
-                                <div class="price-quantity-minus price-quantity">
-                                    <i class="fa-solid fa-minus"></i>
-                                </div>
-                                <input type="number" value="1" data-product-sub-id="186719" data-product-index="0">
-                                <div class="price-quantity-plus price-quantity">
-                                    <i class="fa-solid fa-plus"></i>
-                                </div>
-                            </div>
-                            <div class="price-cart-mini">
-                                <ins>
-                                    <span>
-                                        1.862.000₫                             
-                                    </span>
-                                </ins>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bottom-action">
-                <!-- <input type="hidden" name="total_price_not_format" value="5158000"> -->
-                <div class="total-price">Tổng cộng: <strong>5.158.000đ</strong></div>
-                <div class="box-action">
-                    <a href="#" class="action-view-cart">Xem giỏ hàng</a>
-                    <a href="#" class="action-login">Đăng nhập</a>
-                </div>
-            </div>
+      <div class="sub-action sub-action-cart">
+        <div class="top-action">
+          <div type="button" class="btn-close" onclick="closeCart()">
+            <i class="fa-solid fa-x">x</i>
+          </div>
+          <h3>Giỏ hàng</h3>
+          <span class="number-cart">2</span>
         </div>
-        <div class="container d-flex">
-            <nav class="main-menu">
-                <!-- nav -->
-                <ul class="menu">
-                    <li>
-                        <a href="#">NỮ</a>
-                        <ul class="sub-menu">
-                            <div class="cat-sub-menu">
-                                <div>
-                                    <a href="#">
-                                        NEW ARRIVAL
-                                    </a>
-                                </div>
 
-                                <div>
-                                    <a href="#">
-                                        IVY YOU
-                                    </a>
-                                </div>
+        <div class="main-action">
+          <!-- item cart -->
+          <div class="item-product-cart d-flex">
+            <div class="thumb-product-cart">
+              <img src="../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg" alt="" class="lazy" />
+            </div>
 
-                                <div>
-                                    <a href="#">
-                                        EXPRESS - FALL/WINTER 2023 COLLECTION
-                                    </a>
-                                </div>
+            <div class="info-product-cart">
+              <h3>
+                <a href="#"> Lealia Blazer - Áo blazer nhung trơn </a>
+              </h3>
+              <div class="info-properties d-flex">
+                <p class="properties-color">Màu sắc: <span style="color: #000">Đen</span></p>
+                <p>Size: <span style="text-transform: uppercase">m</span></p>
+              </div>
+              <div class="info-price-mini d-flex">
+                <div class="info-price-quantity d-flex">
+                  <div class="price-quantity-minus price-quantity">
+                    <i class="fa-solid fa-minus"></i>
+                  </div>
+                  <input type="number" value="1" data-product-sub-id="186719" data-product-index="0" />
+                  <div class="price-quantity-plus price-quantity">
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+                <div class="price-cart-mini">
+                  <ins>
+                    <span> 1.862.000₫ </span>
+                  </ins>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                                <div>
-                                    <a href="#">
-                                        DELICATE URBAN
-                                    </a>
-                                </div>
+          <!-- item cart -->
+          <div class="item-product-cart d-flex">
+            <div class="thumb-product-cart">
+              <img src="../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg" alt="" class="lazy" />
+            </div>
 
-                                <div>
-                                    <a href="#">
-                                        REFINED - NEW COLLECTION FW2023
-                                    </a>
-                                </div>
-                            </div>
+            <div class="info-product-cart">
+              <h3>
+                <a href="#"> Lealia Blazer - Áo blazer nhung trơn </a>
+              </h3>
+              <div class="info-properties d-flex">
+                <p class="properties-color">Màu sắc: <span style="color: #000">Đen</span></p>
+                <p>Size: <span style="text-transform: uppercase">m</span></p>
+              </div>
+              <div class="info-price-mini d-flex">
+                <div class="info-price-quantity d-flex">
+                  <div class="price-quantity-minus price-quantity">
+                    <i class="fa-solid fa-minus"></i>
+                  </div>
+                  <input type="number" value="1" data-product-sub-id="186719" data-product-index="0" />
+                  <div class="price-quantity-plus price-quantity">
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+                <div class="price-cart-mini">
+                  <ins>
+                    <span> 1.862.000₫ </span>
+                  </ins>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                            <div class="list-submenu d-flex">
-                                <div class="item-list-submenu">
-                                    <h3><a href="#">ÁO</a></h3>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Áo sơ mi</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Áo thun</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Áo kiểu</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Áo croptop</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Áo peplum</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Áo vest/ blazer</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Áo len</a>
-                                        </li>
-                                    </ul>
-                                </div>
+        <div class="bottom-action">
+          <!-- <input type="hidden" name="total_price_not_format" value="5158000"> -->
+          <div class="total-price">Tổng cộng: <strong>5.158.000đ</strong></div>
+          <div class="box-action">
+            <a href="../giohang/index.html" class="action-view-cart">Xem giỏ hàng</a>
+            <a href="../login/index.html" class="action-login">Đăng nhập</a>
+          </div>
+        </div>
+      </div>
+      <div class="container d-flex">
+        <nav class="main-menu">
+          <!-- nav -->
+          <ul class="menu">
+            <li>
+              <a href="#">NỮ</a>
+              <ul class="sub-menu">
+                <div class="cat-sub-menu">
+                  <div>
+                    <a href="#"> NEW ARRIVAL </a>
+                  </div>
 
-                                <div class="item-list-submenu">
-                                    <h3><a href="https://ivymoda.com/danh-muc/ao-khoac-nu-dep">ÁO KHOÁC</a></h3>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Áo khoác</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Áo dạ</a>
-                                            </li>
-                                        <li>
-                                            <a href="#">Áo phao</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Áo măng tô</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                  <div>
+                    <a href="#"> IVY YOU </a>
+                  </div>
 
-                                <div class="item-list-submenu">
-                                    <h3><a href="#">QUẦN &amp; JUMPSUIT</a></h3>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Quần jeans</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Quần dài</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Quần lửng/ short</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Quần baggy</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Jumpsuit</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                  <div>
+                    <a href="#"> EXPRESS - FALL/WINTER 2023 COLLECTION </a>
+                  </div>
 
-                                <div class="item-list-submenu">
-                                    <h3><a href="#">CHÂN VÁY</a></h3>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Chân váy</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Chân váy xếp ly</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Chân váy chữ A</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                  <div>
+                    <a href="#"> DELICATE URBAN </a>
+                  </div>
 
-                                <div class="item-list-submenu">
-                                    <h3><a href="#">ĐẦM</a></h3>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Đầm</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Đầm maxi/ voan</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Đầm thun</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Senora - Đầm dạ hội</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                  <div>
+                    <a href="#"> REFINED - NEW COLLECTION FW2023 </a>
+                  </div>
+                </div>
 
-                                <div class="item-list-submenu">
-                                    <h3><a href="#">ĐỒ LÓT</a></h3>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Áo bra</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Quần lót</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                <div class="list-submenu d-flex">
+                  <div class="item-list-submenu">
+                    <h3><a href="#">ÁO</a></h3>
+                    <ul>
+                      <li>
+                        <a href="#">Áo sơ mi</a>
+                      </li>
+                      <li>
+                        <a href="">Áo thun</a>
+                      </li>
+                      <li>
+                        <a href="">Áo kiểu</a>
+                      </li>
+                      <li>
+                        <a href="">Áo croptop</a>
+                      </li>
+                      <li>
+                        <a href="">Áo peplum</a>
+                      </li>
+                      <li>
+                        <a href="">Áo vest/ blazer</a>
+                      </li>
+                      <li>
+                        <a href="">Áo len</a>
+                      </li>
+                    </ul>
+                  </div>
 
-                                <div class="item-list-submenu">
-                                    <h3><a href="#">PHỤ KIỆN</a></h3>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Túi/ ví</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Giày/dép &amp; Sandals</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Phụ kiện</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </ul>
-                    </li>
+                  <div class="item-list-submenu">
+                    <h3><a href="https://ivymoda.com/danh-muc/ao-khoac-nu-dep">ÁO KHOÁC</a></h3>
+                    <ul>
+                      <li>
+                        <a href="#">Áo khoác</a>
+                      </li>
+                      <li>
+                        <a href="#">Áo dạ</a>
+                      </li>
+                      <li>
+                        <a href="#">Áo phao</a>
+                      </li>
+                      <li>
+                        <a href="#">Áo măng tô</a>
+                      </li>
+                    </ul>
+                  </div>
 
-                    <li>
-                        <a href="#">NAM</a>
-                        <ul class="sub-menu">
-                            <div class="cat-sub-menu">
-                                <div>
-                                    <a href="#">NEW ARRIVALS</a>
-                                </div>
-                            </div>
+                  <div class="item-list-submenu">
+                    <h3><a href="#">QUẦN &amp; JUMPSUIT</a></h3>
+                    <ul>
+                      <li>
+                        <a href="#">Quần jeans</a>
+                      </li>
+                      <li>
+                        <a href="#">Quần dài</a>
+                      </li>
+                      <li>
+                        <a href="#">Quần lửng/ short</a>
+                      </li>
+                      <li>
+                        <a href="#">Quần baggy</a>
+                      </li>
+                      <li>
+                        <a href="#">Jumpsuit</a>
+                      </li>
+                    </ul>
+                  </div>
 
-                            <div class="list-submenu d-flex">
-                                <div class="item-list-submenu">
-                                    <h3><a href="#">ÁO</a></h3>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Áo thun</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Áo khoác Nam</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Áo polo</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Áo sơ mi</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Áo phao</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Áo  len</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Áo vest</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                  <div class="item-list-submenu">
+                    <h3><a href="#">CHÂN VÁY</a></h3>
+                    <ul>
+                      <li>
+                        <a href="#">Chân váy</a>
+                      </li>
+                      <li>
+                        <a href="#">Chân váy xếp ly</a>
+                      </li>
+                      <li>
+                        <a href="#">Chân váy chữ A</a>
+                      </li>
+                    </ul>
+                  </div>
 
-                                <div class="item-list-submenu">
-                                    <h3><a href="#">QUẦN NAM</a></h3>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Quần jeans</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Quần lửng/short</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Quần dài</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Quần khaki</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Quần tây</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                  <div class="item-list-submenu">
+                    <h3><a href="#">ĐẦM</a></h3>
+                    <ul>
+                      <li>
+                        <a href="#">Đầm</a>
+                      </li>
+                      <li>
+                        <a href="#">Đầm maxi/ voan</a>
+                      </li>
+                      <li>
+                        <a href="#">Đầm thun</a>
+                      </li>
+                      <li>
+                        <a href="#">Senora - Đầm dạ hội</a>
+                      </li>
+                    </ul>
+                  </div>
 
-                                <div class="item-list-submenu">
-                                    <h3><a href="#">GIÀY &amp; DÉP</a></h3>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Giày/Dép </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                  <div class="item-list-submenu">
+                    <h3><a href="#">ĐỒ LÓT</a></h3>
+                    <ul>
+                      <li>
+                        <a href="#">Áo bra</a>
+                      </li>
+                      <li>
+                        <a href="#">Quần lót</a>
+                      </li>
+                    </ul>
+                  </div>
 
-                                <div class="item-list-submenu">
-                                    <h3><a href="#">PHỤ KIỆN</a></h3>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Phụ kiện</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </ul>
-                    </li>
+                  <div class="item-list-submenu">
+                    <h3><a href="#">PHỤ KIỆN</a></h3>
+                    <ul>
+                      <li>
+                        <a href="#">Túi/ ví</a>
+                      </li>
+                      <li>
+                        <a href="#">Giày/dép &amp; Sandals</a>
+                      </li>
+                      <li>
+                        <a href="#">Phụ kiện</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </ul>
+            </li>
 
-                    <li>
-                        <a href="#">TRẺ EM</a>
-                        <ul class="sub-menu">
-                            <div class="cat-sub-menu">
-                                <div>
-                                    <a href="#">NEW ARRIVAL</a>
-                                </div>
-                            </div>
-                            <div class="list-submenu d-flex">
-                                <div class="item-list-submenu">
-                                    <h3><a href="#">ÁO</a></h3>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Áo thun</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Áo khoác Nam</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Áo polo</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Áo sơ mi</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Áo phao</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Áo len</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Áo vest</a>
-                                        </li>
-                                    </ul>
-                                </div>
+            <li>
+              <a href="#">NAM</a>
+              <ul class="sub-menu">
+                <div class="cat-sub-menu">
+                  <div>
+                    <a href="#">NEW ARRIVALS</a>
+                  </div>
+                </div>
 
-                                <div class="item-list-submenu">
-                                    <h3><a href="#">BÉ TRAI</a></h3>
-                                    <ul>
-                                        <li>
-                                            <a href="3">Áo bé trai</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Quần bé trai</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Phụ kiện bé trai</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </ul>
-                    </li>
-                    <li class="red-text">
-                        <a href="#">SIÊU SALE THÁNG 10</a>
-                    </li>
-                    <li>
-                        <a href="#">LIFESTYLE</a>
-                    </li>
-                    <li>
-                        <a href="#">VỀ CHÚNG TÔI</a>
-                    </li>
+                <div class="list-submenu d-flex">
+                  <div class="item-list-submenu">
+                    <h3><a href="#">ÁO</a></h3>
+                    <ul>
+                      <li>
+                        <a href="#">Áo thun</a>
+                      </li>
+                      <li>
+                        <a href="#">Áo khoác Nam</a>
+                      </li>
+                      <li>
+                        <a href="#">Áo polo</a>
+                      </li>
+                      <li>
+                        <a href="#">Áo sơ mi</a>
+                      </li>
+                      <li>
+                        <a href="#">Áo phao</a>
+                      </li>
+                      <li>
+                        <a href="#">Áo len</a>
+                      </li>
+                      <li>
+                        <a href="#">Áo vest</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="item-list-submenu">
+                    <h3><a href="#">QUẦN NAM</a></h3>
+                    <ul>
+                      <li>
+                        <a href="#">Quần jeans</a>
+                      </li>
+                      <li>
+                        <a href="#">Quần lửng/short</a>
+                      </li>
+                      <li>
+                        <a href="#">Quần dài</a>
+                      </li>
+                      <li>
+                        <a href="#">Quần khaki</a>
+                      </li>
+                      <li>
+                        <a href="#">Quần tây</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="item-list-submenu">
+                    <h3><a href="#">GIÀY &amp; DÉP</a></h3>
+                    <ul>
+                      <li>
+                        <a href="#">Giày/Dép </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="item-list-submenu">
+                    <h3><a href="#">PHỤ KIỆN</a></h3>
+                    <ul>
+                      <li>
+                        <a href="#">Phụ kiện</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#">TRẺ EM</a>
+              <ul class="sub-menu">
+                <div class="cat-sub-menu">
+                  <div>
+                    <a href="#">NEW ARRIVAL</a>
+                  </div>
+                </div>
+                <div class="list-submenu d-flex">
+                  <div class="item-list-submenu">
+                    <h3><a href="#">ÁO</a></h3>
+                    <ul>
+                      <li>
+                        <a href="#">Áo thun</a>
+                      </li>
+                      <li>
+                        <a href="#">Áo khoác Nam</a>
+                      </li>
+                      <li>
+                        <a href="#">Áo polo</a>
+                      </li>
+                      <li>
+                        <a href="#">Áo sơ mi</a>
+                      </li>
+                      <li>
+                        <a href="#">Áo phao</a>
+                      </li>
+                      <li>
+                        <a href="#">Áo len</a>
+                      </li>
+                      <li>
+                        <a href="#">Áo vest</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="item-list-submenu">
+                    <h3><a href="#">BÉ TRAI</a></h3>
+                    <ul>
+                      <li>
+                        <a href="3">Áo bé trai</a>
+                      </li>
+                      <li>
+                        <a href="#">Quần bé trai</a>
+                      </li>
+                      <li>
+                        <a href="#">Phụ kiện bé trai</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li class="red-text">
+              <a href="#">SIÊU SALE THÁNG 10</a>
+            </li>
+            <li>
+              <a href="#">LIFESTYLE</a>
+            </li>
+            <li>
+              <a href="#">VỀ CHÚNG TÔI</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- brand -->
+        <div class="site-brand">
+          <a href="/index.html">
+            <img src="../../assets/img/logo/logo.png" alt="Trang chủ | IVY moda" />
+          </a>
+        </div>
+
+        <!-- right header -->
+        <div class="right-header">
+          <form class="search-form">
+            <button type="button">
+              <i class="fa fa-search"></i>
+            </button>
+            <input
+              id="search-quick"
+              type="text"
+              name="q"
+              placeholder="TÌM KIẾM SẢN PHẨM"
+              autocomplete="off"
+              minlength="1"
+            />
+            <div class="quick-search">
+              <div class="item-searchs">
+                <h4>Tìm kiếm nhiều nhất</h4>
+                <div class="item-side-size">
+                  <label class="item-sub-list po-relative mb-2">
+                    <a href="#" class="item-sub-title">Đầm</a>
+                  </label>
+                  <label class="item-sub-list po-relative mb-2">
+                    <a href="#" class="item-sub-title">Nam</a>
+                  </label>
+                  <label class="item-sub-list po-relative mb-2">
+                    <a href="#" class="item-sub-title">Áo vest</a>
+                  </label>
+                  <label class="item-sub-list po-relative mb-2">
+                    <a href="#" class="item-sub-title">Quần jeans</a>
+                  </label>
+                  <label class="item-sub-list po-relative mb-2">
+                    <a href="#" class="item-sub-title">Quần bó</a>
+                  </label>
+                  <label class="item-sub-list po-relative mb-2">
+                    <a href="#" class="item-sub-title">Mũ</a>
+                  </label>
+                  <label class="item-sub-list po-relative mb-2">
+                    <a href="#" class="item-sub-title">Váy</a>
+                  </label>
+                </div>
+              </div>
+
+              <div class="item-searchs">
+                <h4>Gần đây</h4>
+                <div class="item-side-size">
+                  <label class="item-sub-list po-relative mb-2">
+                    <a href="#" class="item-sub-title">Đầm</a>
+                  </label>
+                  <label class="item-sub-list po-relative mb-2">
+                    <a href="#" class="item-sub-title">Nam</a>
+                  </label>
+                  <label class="item-sub-list po-relative mb-2">
+                    <a href="#" class="item-sub-title">Áo vest</a>
+                  </label>
+                  <label class="item-sub-list po-relative mb-2">
+                    <a href="#" class="item-sub-title">Quần jeans</a>
+                  </label>
+                  <label class="item-sub-list po-relative mb-2">
+                    <a href="#" class="item-sub-title">Quần bó</a>
+                  </label>
+                  <label class="item-sub-list po-relative mb-2">
+                    <a href="#" class="item-sub-title">Mũ</a>
+                  </label>
+                  <label class="item-sub-list po-relative mb-2">
+                    <a href="#" class="item-sub-title">Váy</a>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <div class="header-actions">
+            <div class="item wallet">
+              <div type="button" onclick="toggleHelp()" id="help">
+                <i class="fa-solid fa-headphones"></i>
+              </div>
+              <div class="sub-action">
+                <div class="top-action">
+                  <h3>Trợ giúp</h3>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-phone-volume"></i>
+                      Hotline
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-regular fa-comment"></i>
+                      Live Chat
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-brands fa-facebook-messenger"></i>
+                      Messenger
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-regular fa-envelope"></i>
+                      Email
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-receipt"></i>
+                      Tra cứu đơn hàng
+                    </a>
+                  </li>
                 </ul>
-            </nav>
-
-            <!-- brand -->
-            <div class="site-brand">
-                <a href="/index.html">
-                    <img src="../../assets/img/logo/logo.png" alt="Trang chủ | IVY moda">
-                </a>
+              </div>
             </div>
 
-            <!-- right header -->
-            <div class="right-header">
-                <form class="search-form">
-                    <button type="button">
-                        <i class="fa fa-search"></i>
-                    </button>
-                    <input id="search-quick" type="text" name="q" placeholder="TÌM KIẾM SẢN PHẨM" autocomplete="off" minlength="1">
-                    <div class="quick-search">
-                        <div class="item-searchs">
-                            <h4>Tìm kiếm nhiều nhất</h4>
-                            <div class="item-side-size">
-                                <label class="item-sub-list po-relative mb-2">
-                                    <a href="#" class="item-sub-title">Đầm</a>
-                                </label>
-                                <label class="item-sub-list po-relative mb-2">
-                                    <a href="#" class="item-sub-title">Nam</a>
-                                </label>
-                                <label class="item-sub-list po-relative mb-2">
-                                    <a href="#" class="item-sub-title">Áo vest</a>
-                                </label>
-                                <label class="item-sub-list po-relative mb-2">
-                                    <a href="#" class="item-sub-title">Quần jeans</a>
-                                </label>
-                                <label class="item-sub-list po-relative mb-2">
-                                    <a href="#" class="item-sub-title">Quần bó</a>
-                                </label>
-                                <label class="item-sub-list po-relative mb-2">
-                                    <a href="#" class="item-sub-title">Mũ</a>
-                                </label>
-                                <label class="item-sub-list po-relative mb-2">
-                                    <a href="#" class="item-sub-title">Váy</a>
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="item-searchs">
-                            <h4>Gần đây</h4>
-                            <div class="item-side-size">
-                                <label class="item-sub-list po-relative mb-2">
-                                    <a href="#" class="item-sub-title">Đầm</a>
-                                </label>
-                                <label class="item-sub-list po-relative mb-2">
-                                    <a href="#" class="item-sub-title">Nam</a>
-                                </label>
-                                <label class="item-sub-list po-relative mb-2">
-                                    <a href="#" class="item-sub-title">Áo vest</a>
-                                </label>
-                                <label class="item-sub-list po-relative mb-2">
-                                    <a href="#" class="item-sub-title">Quần jeans</a>
-                                </label>
-                                <label class="item-sub-list po-relative mb-2">
-                                    <a href="#" class="item-sub-title">Quần bó</a>
-                                </label>
-                                <label class="item-sub-list po-relative mb-2">
-                                    <a href="#" class="item-sub-title">Mũ</a>
-                                </label>
-                                <label class="item-sub-list po-relative mb-2">
-                                    <a href="#" class="item-sub-title">Váy</a>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-
-                <div class="header-actions">
-                    <div class="item wallet">
-                        <div type="button" onclick="toggleHelp()" id="help">
-                            <i class="fa-solid fa-headphones"></i>
-                        </div>
-                        <div class="sub-action">
-                            <div class="top-action">
-                                <h3>Trợ giúp</h3>
-                            </div>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-phone-volume"></i>
-                                        Hotline
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-regular fa-comment"></i>
-                                        Live Chat
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-brands fa-facebook-messenger"></i>
-                                        Messenger
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-regular fa-envelope"></i>
-                                        Email
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-receipt"></i>
-                                        Tra cứu đơn hàng
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="item wallet">
-                        <a href="#">
-                            <i class="fa-regular fa-user"></i>
-                        </a>
-                    </div>
-
-                    <div class="item item-cart">
-                        <div type="button" class="icon" href="#" onclick="openCart()">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <span class="number-cart">5</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="item wallet">
+              <a href="#">
+                <i class="fa-regular fa-user"></i>
+              </a>
             </div>
+
+            <div class="item item-cart">
+              <div type="button" class="icon" href="#" onclick="openCart()">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="number-cart">5</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
 
     <!-- main -->
     <main id="main" class="site-main">
-        <div class="container">
-            <div id="product_detail" class="row">
-                <div class="container">
-                    <!-- breadcrubms -->
-                    <div class="breadcrumb-products">
-                        <ol class="breadcrumb__list">
-                            <li class="breadcrumb__item">
-                                <a class="breadcrumb__link" href="#">Trang chủ</a>
-                            </li>
-                            <li class="breadcrumb__item"><a href="#" class="breadcrumb__link" title="Nữ">Nữ</a></li>
-                            <li class="breadcrumb__item"><a href="#" class="breadcrumb__link" title="Chân váy Midi dáng suông ">Chân váy Midi dáng suông </a></li>
-                        </ol>
-                    </div>
+      <div class="container">
+        <div id="product_detail" class="row">
+          <div class="container">
+            <!-- breadcrubms -->
+            <div class="breadcrumb-products">
+              <ol class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="../index.html">Trang chủ</a>
+                </li>
+                <li class="breadcrumb__item"><a href="#" class="breadcrumb__link" title="Nữ">Nữ</a></li>
+                <li class="breadcrumb__item">
+                  <a href="#" class="breadcrumb__link" title="Chân váy Midi dáng suông ">Chân váy Midi dáng suông </a>
+                </li>
+              </ol>
+            </div>
 
-                    <!-- product detail -->
-                    <div class="product-detail">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6 left-product-detail">
-                                    <div class="product-detail__gallery">
-                                        <div class="product-gallery__slide">
-                                            <div class="product-gallery__slide--big">
-                                                <div class="item-zoom">
-                                                    <img src="../../assets/img/products/detail.jpeg" alt="">
-                                                    <img src="../../assets/img/products/detail.jpeg" alt="" id="imgZoom">
-                                                </div>
+            <!-- product detail -->
+            <div class="product-detail">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 left-product-detail">
+                    <div class="product-detail__gallery">
+                      <div class="product-gallery__slide">
+                        <div class="product-gallery__slide--big">
+                          <div class="item-zoom">
+                            <img src="../../assets/img/products/detail.jpeg" alt="" />
+                            <img src="../../assets/img/products/detail.jpeg" alt="" id="imgZoom" />
+                          </div>
 
-                                                <!-- <div class="item-zoom">
+                          <!-- <div class="item-zoom">
                                                     <img src="../../assets/img/products/detail.jpeg" alt="">
                                                     <img src="../../assets/img/products/detail.jpeg" alt="" id="imgZoom">
                                                 </div> -->
-                
-                                            </div>
-
-                                            <div class="product-gallery__slide--small">
-                                                <img src="../../assets/img/products/detail.jpeg" alt="">
-                                                <img src="../../assets/img/products/detail1.jpeg" alt="">
-                                                <img src="../../assets/img/products/detail2.jpeg" alt="">
-                                                <img src="../../assets/img/products/detail3.jpeg" alt="">
-                                            </div>
-                                        </div> 
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="product-detail__information">
-                                        <h1 style="text-transform: uppercase;">Chân váy Midi dáng suông </h1>
-
-                                        <div class="product-detail__sub-info">
-                                            <p>
-                                                SKU: <span>31B9552</span>
-                                            </p>
-                                            <div class="product-detail__rating">
-                                                <div class="product-detail__rating-wrapper" data-percentage="100">
-                                                    <div class="product-detail__rating__background"></div>
-                                                    <div class="product-detail__rating__bar" style="width: 100%;"></div>
-                                                </div>
-                                                <span>(0 đánh giá)</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="product-detail__price">
-                                            <b>1.150.000đ</b>
-                                        </div>
-
-                                        <div class="product-detail__color">
-                                            <p>Màu sắc: Đen</p>
-                                            <div class="product-detail__color__input">
-                                                <input type="radio" name="color" checked="">
-                                                <label>
-                                                    <span>
-                                                        <img src="../../assets/img/bg-check/049.png" alt="049" style="border-radius: 50%;">
-                                                    </span>
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="product-detail__size">
-                                            <div class="product-detail__size__input">
-                                                <label>
-                                                    <span class="text-uppercase">s</span>
-                                                </label>
-                                                <label>
-                                                    <span class="text-uppercase">m</span>
-                                                </label>
-                                                <label>
-                                                    <span class="text-uppercase">l</span>
-                                                </label>
-                                                <label>
-                                                    <span class="text-uppercase active">xl</span>
-                                                </label>
-                                                <label>
-                                                    <span class="text-uppercase">xxl</span>
-                                                </label>
-                                            </div>
-                                            <a href="#">
-                                                <i class="fa-solid fa-ruler"></i>
-                                                Kiểm tra size của bạn
-                                            </a>
-                                        </div>
-
-                                        <div class="product-detail__quantity">
-                                            <p>Số lượng</p>
-                                            <div class="product-detail__quantity-input">
-                                                <input type="number" value="1" name="quantity">
-                                                <div class="product-quantity product-detail__quantity--decrease ">-</div>
-                                                <div class="product-quantity product-detail__quantity--increase ">+</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="product-detail__actions">
-                                            <button class="btn btn--large add-to-cart-detail">
-                                                Thêm vào giỏ
-                                            </button>
-
-                                            <button class="btn btn--large btn-buy">
-                                                Mua hàng
-                                            </button>
-
-                                            <button class="btn btn--large btn--wishlist">
-                                                <i class="fa-regular fa-heart"></i>
-                                            </button>
-                                        </div>
-
-                                        <div class="product-detail__actions__find">
-                                            <a href="#" id="check_showroom">Tìm tại cửa hàng</a>
-                                        </div>
-
-                                        <div class="product-detail-divider">
-
-                                        </div>
-
-                                        <div class="product-detail__tab">
-                                            <div class="product-detail__tab-header">
-                                                <div class="tab-item active">
-                                                    <span>GIỚI THIỆU</span>
-                                                </div>
-                                                <div class="tab-item">
-                                                    <span>CHI TIẾT SẢN PHẨM</span>
-                                                </div>
-                                                <div class="tab-item">
-                                                    <span>BẢO QUẢN</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="product-detail__tab-body">
-                                                <div class="tab-content active hideContent">
-                                                    <p>Một cô gái nhiều tài năng chắc chắn sẽ mang vẻ đẹp vô cùng cuốn hút. IVY&nbsp;Ladies mang đến phiên bản&nbsp;Maddy Dres trong BST FW2023 thành công thể hiện trọn vẹn vẻ đẹp tiềm ẩn này.&nbsp;</p>
-                                                    <p>Giữ&nbsp;ý tưởng chủ đạo qua&nbsp;kiểu dáng đầm xòe cổ&nbsp;điển, thiết kế đã được biến tấu linh hoạt thêm những điểm nhấn nổi bật ở phần cổ, đai eo, tùng xòe để tạo nên phiên bản đầm thời thượng nhất.&nbsp;</p>
-                                                    <p>Đầm đính 4&nbsp; khuy sang trọng bên trên phần chiết&nbsp; eo ôm gọn vòng 2 quyến rũ. Dáng tùng&nbsp; xếp&nbsp; nếp đều, tạo độ bồng nhẹ đủ để thấy nét&nbsp; dịu dàng và&nbsp; nhẹ nhàng của một quý cô.&nbsp;&nbsp;</p>
-                                                    <p>Lưu ý: Màu sắc sản phẩm thực tế sẽ có sự chênh lệch nhỏ so với ảnh do điều kiện ánh sáng khi chụp và màu sắc hiển thị qua màn hình máy tính/ điện thoại.</p>
-                                                    <p><strong>Thông tin mẫu:</strong></p>
-                                                    <p><strong>Chiều cao: </strong> 167 cm</p>
-                                                    <p><strong>Cân nặng: </strong> 50 kg</p>
-                                                    <p><strong>Số đo 3 vòng: </strong>83-65-93 cm</p>
-                                                    <p>Mẫu mặc size M&nbsp;</p>
-            
-                                                </div>
-                                                <div class="tab-content hideContent">
-                                                    <table class="" width="70%">
-                                                        <tbody>
-                                                            <tr>
-                                                            <td style="padding-bottom:5px;"><b>Dòng sản phẩm</b></td>
-                                                            <td style="padding-bottom:5px;">You</td>
-                                                        </tr>
-                                                                                                    <tr>
-                                                            <td style="padding-bottom:5px;"><b>Nhóm sản phẩm</b></td>
-                                                            <td style="padding-bottom:5px;">Zuýp</td>
-                                                        </tr>
-                                                                                                    <tr>
-                                                            <td style="padding-bottom:5px;"><b>Kiểu dáng</b></td>
-                                                            <td style="padding-bottom:5px;">Midi</td>
-                                                        </tr>
-                                                                                                    <tr>
-                                                            <td style="padding-bottom:5px;"><b>Độ dài</b></td>
-                                                            <td style="padding-bottom:5px;">Ngang bắp</td>
-                                                        </tr>
-                                                                                                    <tr>
-                                                            <td style="padding-bottom:5px;"><b>Họa tiết</b></td>
-                                                            <td style="padding-bottom:5px;">Trơn</td>
-                                                        </tr>
-                                                                                                    <tr>
-                                                            <td style="padding-bottom:5px;"><b>Chất liệu</b></td>
-                                                            <td style="padding-bottom:5px;">Tuysi</td>
-                                                        </tr>
-                                                                                                                                            </tbody></table>
-                                                </div>
-
-                                                <div class="tab-content hideContent">
-                                                    <p>Chi tiết bảo quản sản phẩm :&nbsp;</p>
-
-                                                    <p><strong>* Các sản phẩm thuộc dòng cao cấp (Senora) và áo khoác (dạ, tweed,&nbsp;lông, phao) chỉ giặt khô,&nbsp;tuyệt đối không giặt ướt.</strong></p>
-
-                                                    <p>* Vải dệt kim: sau khi giặt sản phẩm phải được phơi ngang tránh bai giãn.</p>
-
-                                                    <p>* Vải voan, lụa, chiffon nên giặt bằng tay.</p>
-
-                                                    <p>* Vải thô, tuytsi, kaki không có phối hay trang trí đá cườm thì có thể giặt máy.</p>
-
-                                                    <p>* Vải thô, tuytsi, kaki có&nbsp;phối màu tương phản hay trang trí voan, lụa, đá cườm thì cần giặt tay.</p>
-
-                                                    <p>* Đồ Jeans nên hạn chế giặt bằng máy giặt vì sẽ làm phai màu jeans. Nếu giặt thì&nbsp;nên lộn trái sản phẩm khi giặt, đóng khuy, kéo khóa, không nên giặt chung cùng đồ sáng màu, tránh dính màu vào các sản phẩm khác.&nbsp;</p>
-
-                                                    <p>* Các sản phẩm cần được giặt ngay không ngâm tránh bị loang màu, phân biệt màu và loại vải để tránh trường hợp vải phai. Không nên giặt sản phẩm với xà phòng có chất tẩy mạnh, nên giặt cùng xà phòng pha loãng.</p>
-
-                                                    <p>* Các sản phẩm có thể&nbsp;giặt bằng máy thì chỉ nên để chế độ giặt nhẹ, vắt mức trung bình và nên phân các loại sản phẩm cùng màu và cùng loại vải khi giặt.</p>
-
-                                                    <p>* Nên phơi sản phẩm tại chỗ thoáng mát, tránh ánh nắng trực tiếp sẽ dễ bị phai bạc màu, nên làm khô quần áo bằng cách phơi ở những điểm gió sẽ giữ màu vải tốt hơn.</p>
-
-                                                    <p>* Những chất vải 100% cotton, không nên phơi sản phẩm bằng mắc áo mà nên vắt ngang sản phẩm lên dây phơi để tránh tình trạng rạn vải.</p>
-
-                                                    <p>* Khi ủi sản phẩm bằng bàn là và sử dụng chế độ hơi nước sẽ làm cho sản phẩm dễ ủi phẳng, mát và không bị cháy, giữ màu sản phẩm được đẹp và bền lâu hơn. Nhiệt độ của bàn là tùy theo từng loại vải.&nbsp;</p>
-
-                                                </div>
-                                                <div class="show-more">
-                                                    <div type="button" onclick="handleShow()">
-                                                        <img src="../../assets/img/icon/image-up.png" alt="" class="img-up hidden">
-                                                        <img src="../../assets/img/icon/image-down.png" alt="" class="img-down">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- New arrival -->
-                            <section class="home-new-prod">
-                                <h1 class="title-section">
-                                    Sản phẩm đã xem
-                                </h1>
-                                <div class="exclusive-tabs">
-                                    <!-- exclusive-content -->
-                                    <div class="exclusive-content swiper-container swiper mySwiper">
-                                        <div class="swiper-wrapper">
-                                            <!-- swiper-slide -->
-                                            <div class="swiper-slide">
-                                                <div class="item-new-prod">
-                                                    <div class="product">
-                                                        <div class="info-ticket seller">Best Seller</div>
-                                                    </div>
-                                                    <div class="thumb-product">
-                                                        <a href="#">
-                                                            <img src="../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg" alt="product" class="lazy">
-                                                            <img src="../../assets/img/products/e97cc60bcf0aa836b5cb17b43d2f7261.jpeg" alt="product" class="hover-img lazy">
-                                                        </a>
-                                                    </div>
-                                                    <div class="info-product">
-                                                        <div class="list-color">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="#" class="color-picker">
-                                                                        <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy">
-                                                                    </a>
-                                                                </li>
-                                                                <li class="checked">
-                                                                    <a href="#" class="color-picker">
-                                                                        <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy">
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <h3 class="title-product">
-                                                            <a href="#">Đầm lụa trơn phối khuy bọc</a>
-                                                        </h3>
-                                                        <div class="price-product">
-                                                            <ins>
-                                                                <span>2.490.000đ</span>
-                                                            </ins>
-                                                            <div class="add-to-cart">
-                                                                <a href="#">
-                                                                    <i class="fa-solid fa-bag-shopping"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- swiper slide -->
-                                            <div class="swiper-slide">
-                                                <div class="item-new-prod">
-                                                    <div class="product">
-                                                        <div class="info-ticket seller">Best Seller</div>
-                                                    </div>
-                                                    <div class="thumb-product">
-                                                        <a href="#">
-                                                            <img src="../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg" alt="product" class="lazy">
-                                                            <img src="../../assets/img/products/e97cc60bcf0aa836b5cb17b43d2f7261.jpeg" alt="product" class="hover-img lazy">
-                                                        </a>
-                                                    </div>
-                                                    <div class="info-product">
-                                                        <div class="list-color">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="#" class="color-picker">
-                                                                        <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy">
-                                                                    </a>
-                                                                </li>
-                                                                <li class="checked">
-                                                                    <a href="#" class="color-picker">
-                                                                        <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy">
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <h3 class="title-product">
-                                                            <a href="#">Đầm lụa trơn phối khuy bọc</a>
-                                                        </h3>
-                                                        <div class="price-product">
-                                                            <ins>
-                                                                <span>2.490.000đ</span>
-                                                            </ins>
-                                                        </div>
-                                                    </div>
-                                                    <div class="add-to-cart">
-                                                        <a href="#">
-                                                            <i class="fa-solid fa-bag-shopping"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- swiper slide -->
-                                            <div class="swiper-slide">
-                                                <div class="item-new-prod">
-                                                    <div class="product">
-                                                        <div class="info-ticket seller">Best Seller</div>
-                                                    </div>
-                                                    <div class="thumb-product">
-                                                        <a href="#">
-                                                            <img src="../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg" alt="product" class="lazy">
-                                                            <img src="../../assets/img/products/e97cc60bcf0aa836b5cb17b43d2f7261.jpeg" alt="product" class="hover-img lazy">
-                                                        </a>
-                                                    </div>
-                                                    <div class="info-product">
-                                                        <div class="list-color">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="#" class="color-picker">
-                                                                        <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy">
-                                                                    </a>
-                                                                </li>
-                                                                <li class="checked">
-                                                                    <a href="#" class="color-picker">
-                                                                        <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy">
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <h3 class="title-product">
-                                                            <a href="#">Đầm lụa trơn phối khuy bọc</a>
-                                                        </h3>
-                                                        <div class="price-product">
-                                                            <ins>
-                                                                <span>2.490.000đ</span>
-                                                            </ins>
-                                                            <div class="add-to-cart">
-                                                                <a href="#">
-                                                                    <i class="fa-solid fa-bag-shopping"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- swiper slide -->
-                                            <div class="swiper-slide">
-                                                <div class="item-new-prod">
-                                                    <div class="product">
-                                                        <div class="info-ticket seller">Best Seller</div>
-                                                    </div>
-                                                    <div class="thumb-product">
-                                                        <a href="#">
-                                                            <img src="../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg" alt="product" class="lazy">
-                                                            <img src="../../assets/img/products/e97cc60bcf0aa836b5cb17b43d2f7261.jpeg" alt="product" class="hover-img lazy">
-                                                        </a>
-                                                    </div>
-                                                    <div class="info-product">
-                                                        <div class="list-color">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="#" class="color-picker">
-                                                                        <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy">
-                                                                    </a>
-                                                                </li>
-                                                                <li class="checked">
-                                                                    <a href="#" class="color-picker">
-                                                                        <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy">
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <h3 class="title-product">
-                                                            <a href="#">Đầm lụa trơn phối khuy bọc</a>
-                                                        </h3>
-                                                        <div class="price-product">
-                                                            <ins>
-                                                                <span>2.490.000đ</span>
-                                                            </ins>
-                                                            <div class="add-to-cart">
-                                                                <a href="#">
-                                                                    <i class="fa-solid fa-bag-shopping"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- swiper slide -->
-                                            <div class="swiper-slide">
-                                                <div class="item-new-prod">
-                                                    <div class="product">
-                                                        <div class="info-ticket seller">Best Seller</div>
-                                                    </div>
-                                                    <div class="thumb-product">
-                                                        <a href="#">
-                                                            <img src="../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg" alt="product" class="lazy">
-                                                            <img src="../../assets/img/products/e97cc60bcf0aa836b5cb17b43d2f7261.jpeg" alt="product" class="hover-img lazy">
-                                                        </a>
-                                                    </div>
-                                                    <div class="info-product">
-                                                        <div class="list-color">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="#" class="color-picker">
-                                                                        <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy">
-                                                                    </a>
-                                                                </li>
-                                                                <li class="checked">
-                                                                    <a href="#" class="color-picker">
-                                                                        <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy">
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <h3 class="title-product">
-                                                            <a href="#">Đầm lụa trơn phối khuy bọc</a>
-                                                        </h3>
-                                                        <div class="price-product">
-                                                            <ins>
-                                                                <span>2.490.000đ</span>
-                                                            </ins>
-                                                            <div class="add-to-cart">
-                                                                <a href="#">
-                                                                    <i class="fa-solid fa-bag-shopping"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- swiper slide -->
-                                            <div class="swiper-slide">
-                                                <div class="item-new-prod">
-                                                    <div class="product">
-                                                        <div class="info-ticket seller">Best Seller</div>
-                                                    </div>
-                                                    <div class="thumb-product">
-                                                        <a href="#">
-                                                            <img src="../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg" alt="product" class="lazy">
-                                                            <img src="../../assets/img/products/e97cc60bcf0aa836b5cb17b43d2f7261.jpeg" alt="product" class="hover-img lazy">
-                                                        </a>
-                                                    </div>
-                                                    <div class="info-product">
-                                                        <div class="list-color">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="#" class="color-picker">
-                                                                        <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy">
-                                                                    </a>
-                                                                </li>
-                                                                <li class="checked">
-                                                                    <a href="#" class="color-picker">
-                                                                        <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy">
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <h3 class="title-product">
-                                                            <a href="#">Đầm lụa trơn phối khuy bọc</a>
-                                                        </h3>
-                                                        <div class="price-product">
-                                                            <ins>
-                                                                <span>2.490.000đ</span>
-                                                            </ins>
-                                                            <div class="add-to-cart">
-                                                                <a href="#">
-                                                                    <i class="fa-solid fa-bag-shopping"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- swiper slide -->
-                                            <div class="swiper-slide">
-                                                <div class="item-new-prod">
-                                                    <div class="product">
-                                                        <div class="info-ticket seller">Best Seller</div>
-                                                    </div>
-                                                    <div class="thumb-product">
-                                                        <a href="#">
-                                                            <img src="../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg" alt="product" class="lazy">
-                                                            <img src="../../assets/img/products/e97cc60bcf0aa836b5cb17b43d2f7261.jpeg" alt="product" class="hover-img lazy">
-                                                        </a>
-                                                    </div>
-                                                    <div class="info-product">
-                                                        <div class="list-color">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="#" class="color-picker">
-                                                                        <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy">
-                                                                    </a>
-                                                                </li>
-                                                                <li class="checked">
-                                                                    <a href="#" class="color-picker">
-                                                                        <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy">
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <h3 class="title-product">
-                                                            <a href="#">Đầm lụa trơn phối khuy bọc</a>
-                                                        </h3>
-                                                        <div class="price-product">
-                                                            <ins>
-                                                                <span>2.490.000đ</span>
-                                                            </ins>
-                                                            <div class="add-to-cart">
-                                                                <a href="#">
-                                                                    <i class="fa-solid fa-bag-shopping"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- swiper slide -->
-                                            <div class="swiper-slide">
-                                                <div class="item-new-prod">
-                                                    <div class="product">
-                                                        <div class="info-ticket seller">Best Seller</div>
-                                                    </div>
-                                                    <div class="thumb-product">
-                                                        <a href="#">
-                                                            <img src="../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg" alt="product" class="lazy">
-                                                            <img src="../../assets/img/products/e97cc60bcf0aa836b5cb17b43d2f7261.jpeg" alt="product" class="hover-img lazy">
-                                                        </a>
-                                                    </div>
-                                                    <div class="info-product">
-                                                        <div class="list-color">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="#" class="color-picker">
-                                                                        <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy">
-                                                                    </a>
-                                                                </li>
-                                                                <li class="checked">
-                                                                    <a href="#" class="color-picker">
-                                                                        <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy">
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <h3 class="title-product">
-                                                            <a href="#">Đầm lụa trơn phối khuy bọc</a>
-                                                        </h3>
-                                                        <div class="price-product">
-                                                            <ins>
-                                                                <span>2.490.000đ</span>
-                                                            </ins>
-                                                            <div class="add-to-cart">
-                                                                <a href="#">
-                                                                    <i class="fa-solid fa-bag-shopping"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div type="button" class="swiper-button-prev">
-                                        
-                                        </div>
-                                        <div type="button" class="swiper-button-next">
-                                        
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            
-                            <!-- home trending -->
-                            <section class="home-trending bg-before ">
-                                <div class="img-trending">
-                                    <img src="../../assets/img/trengding/bg-trending.jpeg" alt="trending">
-                                </div>
-                            </section>
                         </div>
+
+                        <div class="product-gallery__slide--small">
+                          <img src="../../assets/img/products/detail.jpeg" alt="" />
+                          <img src="../../assets/img/products/detail1.jpeg" alt="" />
+                          <img src="../../assets/img/products/detail2.jpeg" alt="" />
+                          <img src="../../assets/img/products/detail3.jpeg" alt="" />
+                        </div>
+                      </div>
                     </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="product-detail__information">
+                      <h1 style="text-transform: uppercase">Chân váy Midi dáng suông</h1>
+
+                      <div class="product-detail__sub-info">
+                        <p>SKU: <span>31B9552</span></p>
+                        <div class="product-detail__rating">
+                          <div class="product-detail__rating-wrapper" data-percentage="100">
+                            <div class="product-detail__rating__background"></div>
+                            <div class="product-detail__rating__bar" style="width: 100%"></div>
+                          </div>
+                          <span>(0 đánh giá)</span>
+                        </div>
+                      </div>
+
+                      <div class="product-detail__price">
+                        <b>1.150.000đ</b>
+                      </div>
+
+                      <div class="product-detail__color">
+                        <p>Màu sắc: Đen</p>
+                        <div class="product-detail__color__input">
+                          <input type="radio" name="color" checked="" />
+                          <label>
+                            <span>
+                              <img src="../../assets/img/bg-check/049.png" alt="049" style="border-radius: 50%" />
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="product-detail__size">
+                        <div class="product-detail__size__input">
+                          <label>
+                            <span class="text-uppercase">s</span>
+                          </label>
+                          <label>
+                            <span class="text-uppercase">m</span>
+                          </label>
+                          <label>
+                            <span class="text-uppercase">l</span>
+                          </label>
+                          <label>
+                            <span class="text-uppercase active">xl</span>
+                          </label>
+                          <label>
+                            <span class="text-uppercase">xxl</span>
+                          </label>
+                        </div>
+                        <a href="#">
+                          <i class="fa-solid fa-ruler"></i>
+                          Kiểm tra size của bạn
+                        </a>
+                      </div>
+
+                      <div class="product-detail__quantity">
+                        <p>Số lượng</p>
+                        <div class="product-detail__quantity-input">
+                          <input type="number" value="1" name="quantity" />
+                          <div class="product-quantity product-detail__quantity--decrease">-</div>
+                          <div class="product-quantity product-detail__quantity--increase">+</div>
+                        </div>
+                      </div>
+
+                      <div class="product-detail__actions">
+                        <button class="btn btn--large add-to-cart-detail">Thêm vào giỏ</button>
+
+                        <button class="btn btn--large btn-buy">Mua hàng</button>
+
+                        <button class="btn btn--large btn--wishlist">
+                          <i class="fa-regular fa-heart"></i>
+                        </button>
+                      </div>
+
+                      <div class="product-detail__actions__find">
+                        <a href="#" id="check_showroom">Tìm tại cửa hàng</a>
+                      </div>
+
+                      <div class="product-detail-divider"></div>
+
+                      <div class="product-detail__tab">
+                        <div class="product-detail__tab-header">
+                          <div class="tab-item active">
+                            <span>GIỚI THIỆU</span>
+                          </div>
+                          <div class="tab-item">
+                            <span>CHI TIẾT SẢN PHẨM</span>
+                          </div>
+                          <div class="tab-item">
+                            <span>BẢO QUẢN</span>
+                          </div>
+                        </div>
+
+                        <div class="product-detail__tab-body">
+                          <div class="tab-content active hideContent">
+                            <p>
+                              Một cô gái nhiều tài năng chắc chắn sẽ mang vẻ đẹp vô cùng cuốn hút. IVY&nbsp;Ladies mang
+                              đến phiên bản&nbsp;Maddy Dres trong BST FW2023 thành công thể hiện trọn vẹn vẻ đẹp tiềm ẩn
+                              này.&nbsp;
+                            </p>
+                            <p>
+                              Giữ&nbsp;ý tưởng chủ đạo qua&nbsp;kiểu dáng đầm xòe cổ&nbsp;điển, thiết kế đã được biến
+                              tấu linh hoạt thêm những điểm nhấn nổi bật ở phần cổ, đai eo, tùng xòe để tạo nên phiên
+                              bản đầm thời thượng nhất.&nbsp;
+                            </p>
+                            <p>
+                              Đầm đính 4&nbsp; khuy sang trọng bên trên phần chiết&nbsp; eo ôm gọn vòng 2 quyến rũ. Dáng
+                              tùng&nbsp; xếp&nbsp; nếp đều, tạo độ bồng nhẹ đủ để thấy nét&nbsp; dịu dàng và&nbsp; nhẹ
+                              nhàng của một quý cô.&nbsp;&nbsp;
+                            </p>
+                            <p>
+                              Lưu ý: Màu sắc sản phẩm thực tế sẽ có sự chênh lệch nhỏ so với ảnh do điều kiện ánh sáng
+                              khi chụp và màu sắc hiển thị qua màn hình máy tính/ điện thoại.
+                            </p>
+                            <p><strong>Thông tin mẫu:</strong></p>
+                            <p><strong>Chiều cao: </strong> 167 cm</p>
+                            <p><strong>Cân nặng: </strong> 50 kg</p>
+                            <p><strong>Số đo 3 vòng: </strong>83-65-93 cm</p>
+                            <p>Mẫu mặc size M&nbsp;</p>
+                          </div>
+                          <div class="tab-content hideContent">
+                            <table class="" width="70%">
+                              <tbody>
+                                <tr>
+                                  <td style="padding-bottom: 5px"><b>Dòng sản phẩm</b></td>
+                                  <td style="padding-bottom: 5px">You</td>
+                                </tr>
+                                <tr>
+                                  <td style="padding-bottom: 5px"><b>Nhóm sản phẩm</b></td>
+                                  <td style="padding-bottom: 5px">Zuýp</td>
+                                </tr>
+                                <tr>
+                                  <td style="padding-bottom: 5px"><b>Kiểu dáng</b></td>
+                                  <td style="padding-bottom: 5px">Midi</td>
+                                </tr>
+                                <tr>
+                                  <td style="padding-bottom: 5px"><b>Độ dài</b></td>
+                                  <td style="padding-bottom: 5px">Ngang bắp</td>
+                                </tr>
+                                <tr>
+                                  <td style="padding-bottom: 5px"><b>Họa tiết</b></td>
+                                  <td style="padding-bottom: 5px">Trơn</td>
+                                </tr>
+                                <tr>
+                                  <td style="padding-bottom: 5px"><b>Chất liệu</b></td>
+                                  <td style="padding-bottom: 5px">Tuysi</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+
+                          <div class="tab-content hideContent">
+                            <p>Chi tiết bảo quản sản phẩm :&nbsp;</p>
+
+                            <p>
+                              <strong
+                                >* Các sản phẩm thuộc dòng cao cấp (Senora) và áo khoác (dạ, tweed,&nbsp;lông, phao) chỉ
+                                giặt khô,&nbsp;tuyệt đối không giặt ướt.</strong
+                              >
+                            </p>
+
+                            <p>* Vải dệt kim: sau khi giặt sản phẩm phải được phơi ngang tránh bai giãn.</p>
+
+                            <p>* Vải voan, lụa, chiffon nên giặt bằng tay.</p>
+
+                            <p>* Vải thô, tuytsi, kaki không có phối hay trang trí đá cườm thì có thể giặt máy.</p>
+
+                            <p>
+                              * Vải thô, tuytsi, kaki có&nbsp;phối màu tương phản hay trang trí voan, lụa, đá cườm thì
+                              cần giặt tay.
+                            </p>
+
+                            <p>
+                              * Đồ Jeans nên hạn chế giặt bằng máy giặt vì sẽ làm phai màu jeans. Nếu giặt thì&nbsp;nên
+                              lộn trái sản phẩm khi giặt, đóng khuy, kéo khóa, không nên giặt chung cùng đồ sáng màu,
+                              tránh dính màu vào các sản phẩm khác.&nbsp;
+                            </p>
+
+                            <p>
+                              * Các sản phẩm cần được giặt ngay không ngâm tránh bị loang màu, phân biệt màu và loại vải
+                              để tránh trường hợp vải phai. Không nên giặt sản phẩm với xà phòng có chất tẩy mạnh, nên
+                              giặt cùng xà phòng pha loãng.
+                            </p>
+
+                            <p>
+                              * Các sản phẩm có thể&nbsp;giặt bằng máy thì chỉ nên để chế độ giặt nhẹ, vắt mức trung
+                              bình và nên phân các loại sản phẩm cùng màu và cùng loại vải khi giặt.
+                            </p>
+
+                            <p>
+                              * Nên phơi sản phẩm tại chỗ thoáng mát, tránh ánh nắng trực tiếp sẽ dễ bị phai bạc màu,
+                              nên làm khô quần áo bằng cách phơi ở những điểm gió sẽ giữ màu vải tốt hơn.
+                            </p>
+
+                            <p>
+                              * Những chất vải 100% cotton, không nên phơi sản phẩm bằng mắc áo mà nên vắt ngang sản
+                              phẩm lên dây phơi để tránh tình trạng rạn vải.
+                            </p>
+
+                            <p>
+                              * Khi ủi sản phẩm bằng bàn là và sử dụng chế độ hơi nước sẽ làm cho sản phẩm dễ ủi phẳng,
+                              mát và không bị cháy, giữ màu sản phẩm được đẹp và bền lâu hơn. Nhiệt độ của bàn là tùy
+                              theo từng loại vải.&nbsp;
+                            </p>
+                          </div>
+                          <div class="show-more">
+                            <div type="button" onclick="handleShow()">
+                              <img src="../../assets/img/icon/image-up.png" alt="" class="img-up hidden" />
+                              <img src="../../assets/img/icon/image-down.png" alt="" class="img-down" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
+                <!-- New arrival -->
+                <section class="home-new-prod">
+                  <h1 class="title-section">Sản phẩm đã xem</h1>
+                  <div class="exclusive-tabs">
+                    <!-- exclusive-content -->
+                    <div class="exclusive-content swiper-container swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+                          <div class="item-new-prod">
+                            <div class="product">
+                              <div class="info-ticket seller">Best Seller</div>
+                            </div>
+                            <div class="thumb-product">
+                              <a href="#">
+                                <img
+                                  src="../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg"
+                                  alt="product"
+                                  class="lazy"
+                                />
+                                <img
+                                  src="../../assets/img/products/e97cc60bcf0aa836b5cb17b43d2f7261.jpeg"
+                                  alt="product"
+                                  class="hover-img lazy"
+                                />
+                              </a>
+                            </div>
+                            <div class="info-product">
+                              <div class="list-color">
+                                <ul>
+                                  <li>
+                                    <a href="#" class="color-picker">
+                                      <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy" />
+                                    </a>
+                                  </li>
+                                  <li class="checked">
+                                    <a href="#" class="color-picker">
+                                      <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy" />
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <h3 class="title-product">
+                                <a href="#">Đầm lụa trơn phối khuy bọc</a>
+                              </h3>
+                              <div class="price-product">
+                                <ins>
+                                  <span>2.490.000đ</span>
+                                </ins>
+                                <div class="add-to-cart">
+                                  <a href="#">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- swiper slide -->
+                        <div class="swiper-slide">
+                          <div class="item-new-prod">
+                            <div class="product">
+                              <div class="info-ticket seller">Best Seller</div>
+                            </div>
+                            <div class="thumb-product">
+                              <a href="#">
+                                <img
+                                  src="../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg"
+                                  alt="product"
+                                  class="lazy"
+                                />
+                                <img
+                                  src="../../assets/img/products/e97cc60bcf0aa836b5cb17b43d2f7261.jpeg"
+                                  alt="product"
+                                  class="hover-img lazy"
+                                />
+                              </a>
+                            </div>
+                            <div class="info-product">
+                              <div class="list-color">
+                                <ul>
+                                  <li>
+                                    <a href="#" class="color-picker">
+                                      <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy" />
+                                    </a>
+                                  </li>
+                                  <li class="checked">
+                                    <a href="#" class="color-picker">
+                                      <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy" />
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <h3 class="title-product">
+                                <a href="#">Đầm lụa trơn phối khuy bọc</a>
+                              </h3>
+                              <div class="price-product">
+                                <ins>
+                                  <span>2.490.000đ</span>
+                                </ins>
+                              </div>
+                            </div>
+                            <div class="add-to-cart">
+                              <a href="#">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- swiper slide -->
+                        <div class="swiper-slide">
+                          <div class="item-new-prod">
+                            <div class="product">
+                              <div class="info-ticket seller">Best Seller</div>
+                            </div>
+                            <div class="thumb-product">
+                              <a href="#">
+                                <img
+                                  src="../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg"
+                                  alt="product"
+                                  class="lazy"
+                                />
+                                <img
+                                  src="../../assets/img/products/e97cc60bcf0aa836b5cb17b43d2f7261.jpeg"
+                                  alt="product"
+                                  class="hover-img lazy"
+                                />
+                              </a>
+                            </div>
+                            <div class="info-product">
+                              <div class="list-color">
+                                <ul>
+                                  <li>
+                                    <a href="#" class="color-picker">
+                                      <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy" />
+                                    </a>
+                                  </li>
+                                  <li class="checked">
+                                    <a href="#" class="color-picker">
+                                      <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy" />
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <h3 class="title-product">
+                                <a href="#">Đầm lụa trơn phối khuy bọc</a>
+                              </h3>
+                              <div class="price-product">
+                                <ins>
+                                  <span>2.490.000đ</span>
+                                </ins>
+                                <div class="add-to-cart">
+                                  <a href="#">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- swiper slide -->
+                        <div class="swiper-slide">
+                          <div class="item-new-prod">
+                            <div class="product">
+                              <div class="info-ticket seller">Best Seller</div>
+                            </div>
+                            <div class="thumb-product">
+                              <a href="#">
+                                <img
+                                  src="../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg"
+                                  alt="product"
+                                  class="lazy"
+                                />
+                                <img
+                                  src="../../assets/img/products/e97cc60bcf0aa836b5cb17b43d2f7261.jpeg"
+                                  alt="product"
+                                  class="hover-img lazy"
+                                />
+                              </a>
+                            </div>
+                            <div class="info-product">
+                              <div class="list-color">
+                                <ul>
+                                  <li>
+                                    <a href="#" class="color-picker">
+                                      <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy" />
+                                    </a>
+                                  </li>
+                                  <li class="checked">
+                                    <a href="#" class="color-picker">
+                                      <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy" />
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <h3 class="title-product">
+                                <a href="#">Đầm lụa trơn phối khuy bọc</a>
+                              </h3>
+                              <div class="price-product">
+                                <ins>
+                                  <span>2.490.000đ</span>
+                                </ins>
+                                <div class="add-to-cart">
+                                  <a href="#">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- swiper slide -->
+                        <div class="swiper-slide">
+                          <div class="item-new-prod">
+                            <div class="product">
+                              <div class="info-ticket seller">Best Seller</div>
+                            </div>
+                            <div class="thumb-product">
+                              <a href="#">
+                                <img
+                                  src="../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg"
+                                  alt="product"
+                                  class="lazy"
+                                />
+                                <img
+                                  src="../../assets/img/products/e97cc60bcf0aa836b5cb17b43d2f7261.jpeg"
+                                  alt="product"
+                                  class="hover-img lazy"
+                                />
+                              </a>
+                            </div>
+                            <div class="info-product">
+                              <div class="list-color">
+                                <ul>
+                                  <li>
+                                    <a href="#" class="color-picker">
+                                      <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy" />
+                                    </a>
+                                  </li>
+                                  <li class="checked">
+                                    <a href="#" class="color-picker">
+                                      <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy" />
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <h3 class="title-product">
+                                <a href="#">Đầm lụa trơn phối khuy bọc</a>
+                              </h3>
+                              <div class="price-product">
+                                <ins>
+                                  <span>2.490.000đ</span>
+                                </ins>
+                                <div class="add-to-cart">
+                                  <a href="#">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- swiper slide -->
+                        <div class="swiper-slide">
+                          <div class="item-new-prod">
+                            <div class="product">
+                              <div class="info-ticket seller">Best Seller</div>
+                            </div>
+                            <div class="thumb-product">
+                              <a href="#">
+                                <img
+                                  src="../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg"
+                                  alt="product"
+                                  class="lazy"
+                                />
+                                <img
+                                  src="../../assets/img/products/e97cc60bcf0aa836b5cb17b43d2f7261.jpeg"
+                                  alt="product"
+                                  class="hover-img lazy"
+                                />
+                              </a>
+                            </div>
+                            <div class="info-product">
+                              <div class="list-color">
+                                <ul>
+                                  <li>
+                                    <a href="#" class="color-picker">
+                                      <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy" />
+                                    </a>
+                                  </li>
+                                  <li class="checked">
+                                    <a href="#" class="color-picker">
+                                      <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy" />
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <h3 class="title-product">
+                                <a href="#">Đầm lụa trơn phối khuy bọc</a>
+                              </h3>
+                              <div class="price-product">
+                                <ins>
+                                  <span>2.490.000đ</span>
+                                </ins>
+                                <div class="add-to-cart">
+                                  <a href="#">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- swiper slide -->
+                        <div class="swiper-slide">
+                          <div class="item-new-prod">
+                            <div class="product">
+                              <div class="info-ticket seller">Best Seller</div>
+                            </div>
+                            <div class="thumb-product">
+                              <a href="#">
+                                <img
+                                  src="../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg"
+                                  alt="product"
+                                  class="lazy"
+                                />
+                                <img
+                                  src="../../assets/img/products/e97cc60bcf0aa836b5cb17b43d2f7261.jpeg"
+                                  alt="product"
+                                  class="hover-img lazy"
+                                />
+                              </a>
+                            </div>
+                            <div class="info-product">
+                              <div class="list-color">
+                                <ul>
+                                  <li>
+                                    <a href="#" class="color-picker">
+                                      <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy" />
+                                    </a>
+                                  </li>
+                                  <li class="checked">
+                                    <a href="#" class="color-picker">
+                                      <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy" />
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <h3 class="title-product">
+                                <a href="#">Đầm lụa trơn phối khuy bọc</a>
+                              </h3>
+                              <div class="price-product">
+                                <ins>
+                                  <span>2.490.000đ</span>
+                                </ins>
+                                <div class="add-to-cart">
+                                  <a href="#">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- swiper slide -->
+                        <div class="swiper-slide">
+                          <div class="item-new-prod">
+                            <div class="product">
+                              <div class="info-ticket seller">Best Seller</div>
+                            </div>
+                            <div class="thumb-product">
+                              <a href="#">
+                                <img
+                                  src="../../assets/img/products/94c460cb7921bac2e87f9d0751b3206d.jpeg"
+                                  alt="product"
+                                  class="lazy"
+                                />
+                                <img
+                                  src="../../assets/img/products/e97cc60bcf0aa836b5cb17b43d2f7261.jpeg"
+                                  alt="product"
+                                  class="hover-img lazy"
+                                />
+                              </a>
+                            </div>
+                            <div class="info-product">
+                              <div class="list-color">
+                                <ul>
+                                  <li>
+                                    <a href="#" class="color-picker">
+                                      <img src="../../assets/img/bg-check/010.png" alt="aaa" class="lazy" />
+                                    </a>
+                                  </li>
+                                  <li class="checked">
+                                    <a href="#" class="color-picker">
+                                      <img src="../../assets/img/bg-check/049.png" alt="aaa" class="lazy" />
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <h3 class="title-product">
+                                <a href="#">Đầm lụa trơn phối khuy bọc</a>
+                              </h3>
+                              <div class="price-product">
+                                <ins>
+                                  <span>2.490.000đ</span>
+                                </ins>
+                                <div class="add-to-cart">
+                                  <a href="#">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div type="button" class="swiper-button-prev"></div>
+                      <div type="button" class="swiper-button-next"></div>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- home trending -->
+                <section class="home-trending bg-before">
+                  <div class="img-trending">
+                    <img src="../../assets/img/trengding/bg-trending.jpeg" alt="trending" />
+                  </div>
+                </section>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </main>
 
     <!-- site bottom -->
     <div class="site-bottom">
-        <div class="container">
-            <div class="main-footer d-flex">
-                <!-- left footer -->
-                <div class="left-footer">
-                    <div class="top-left">
-                        <div class="logo-footer">
-                            <a href="#">
-                                <img src="../../assets/img/logo/logo-footer.png" alt="logo">
-                            </a>
-                        </div>
+      <div class="container">
+        <div class="main-footer d-flex">
+          <!-- left footer -->
+          <div class="left-footer">
+            <div class="top-left">
+              <div class="logo-footer">
+                <a href="#">
+                  <img src="../../assets/img/logo/logo-footer.png" alt="logo" />
+                </a>
+              </div>
 
-                        <a href="#" class="dmca-badge">
-                            <img src="../../assets/img/logo/dmca_protected_16_120.png" alt=""  style="width: 90%; object-position: center;">
-                        </a>
+              <a href="#" class="dmca-badge">
+                <img
+                  src="../../assets/img/logo/dmca_protected_16_120.png"
+                  alt=""
+                  style="width: 90%; object-position: center"
+                />
+              </a>
 
-                        <div class="logo-conthuong">
-                            <a href="#">
-                                <img src="../../assets/img/logo/img-congthuong.png" alt="congthuong">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="content-left-ft content-ft">
-                        <div class="info-left-ft">
-                            <p>
-                                Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 0105777650
-                            </p>
-
-                            <p>
-                                <strong>Địa chỉ đăng ký:</strong> Tổ dân phố Tháp, P.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam
-                            </p>
-
-                            <p>
-                                <strong>Số điện thoại:</strong> 0243 205 2222/ 090 589 8683
-                            </p>
-
-                            <p>
-                                <strong>Email:</strong> cskh@ivy.com.vn
-                            </p>
-                        </div>
-                    </div>
-
-                    <ul class="list-social">
-                        <li>
-                            <a href="#">
-                                <img src="../../assets/img/icon/ic_fb.svg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="../../assets/img/icon/ic_gg.svg" alt="">
-                            </a>
-                        </li>
-                        <li style="width: 30px; height: 30px;">
-                            <a href="#">
-                                <img src="../../assets/img/icon/ic_instagram.svg" alt="">
-                            </a>
-                        </li>
-                        <li style="width: 30px; height: 30px;">
-                            <a href="#">
-                                <img src="../../assets/img/icon/ic_pinterest.svg" alt="">
-                            </a>
-                        </li>
-                        <li style="width: 30px; height: 30px;">
-                            <a href="#">
-                                <img src="../../assets/img/icon/ic_ytb.svg" alt="">
-                            </a>
-                        </li>
-                    </ul>
-
-                    <div class="hotline">
-                        <a href="#">
-                            HOTLINE: 0246 662 3434
-                        </a>
-                    </div>
-                </div>
-
-                <!-- center footer -->
-                <div class="center-footer d-flex">
-                    <div class="left-center-ft item-center-ft">
-                        <p class="title-footer">
-                            Giới thiệu
-                        </p>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    Về IVY moda
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Tuyển dụng
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Hệ thống cửa hàng
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="main-center-ft item-center-ft">
-                        <p class="title-footer">Dịch vụ khách hàng</p>
-                        <ul>
-                            <li>
-                                <a href="#">Chính sách điều khoản</a>
-                            </li>
-                            <li>
-                                <a href="#">Hướng dẫn mua hàng</a>
-                            </li>
-                            <li>
-                                <a href="#">Chính sách thanh toán</a>
-                            </li>
-                            <li>
-                                <a href="#">Chính sách đổi trả</a>
-                            </li>
-                            <li>
-                                <a href="#">Chính sách bảo hành</a>
-                            </li>
-                            <li>
-                                <a href="#">Chính sách giao nhận vận chuyển</a>
-                            </li>
-                            <li>
-                                <a href="#">Chính sách thẻ thành viên</a>
-                            </li>
-                            <li>
-                                <a href="#">Hệ thống cửa hàng</a>
-                            </li>
-                            <li>
-                                <a href="#">Q&amp;A</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="right-center-ft item-center-ft">
-                        <p class="title-footer">Liên hệ</p>
-                        <ul>
-                            <li>
-                                <a href="#">Hotline</a>
-                            </li>
-                            <li>
-                                <a href="#">Email</a>
-                            </li>
-                            <li>
-                                <a href="#">Live Chat</a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">Messenger</a>
-                            </li>
-                            <li>
-                                <a href="#">Liên hệ</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- right footer -->
-                <div class="right-footer">
-                    <div class="register-form">
-                        <p class="title-footer">
-                            Nhận thông tin các chương trình của IVY moda
-                        </p>
-
-                        <form action="" id="frm_subscribe">
-                            <input id="email_subscribe" type="text" name="email" placeholder="Nhập địa chỉ email" required="required">
-                            <div class="btn-submit">
-                                <input id="btn-submit" class="form-submit" value="Đăng ký" type="submit">
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="info-right-ft">
-                        <p class="title-footer">
-                            Download App
-                        </p>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <img src="../../assets/img/logo/appstore.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="../../assets/img/logo/googleplay.png" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    
-                    </div>
-                </div>
+              <div class="logo-conthuong">
+                <a href="#">
+                  <img src="../../assets/img/logo/img-congthuong.png" alt="congthuong" />
+                </a>
+              </div>
             </div>
+
+            <div class="content-left-ft content-ft">
+              <div class="info-left-ft">
+                <p>Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 0105777650</p>
+
+                <p><strong>Địa chỉ đăng ký:</strong> Tổ dân phố Tháp, P.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam</p>
+
+                <p><strong>Số điện thoại:</strong> 0243 205 2222/ 090 589 8683</p>
+
+                <p><strong>Email:</strong> cskh@ivy.com.vn</p>
+              </div>
+            </div>
+
+            <ul class="list-social">
+              <li>
+                <a href="#">
+                  <img src="../../assets/img/icon/ic_fb.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../../assets/img/icon/ic_gg.svg" alt="" />
+                </a>
+              </li>
+              <li style="width: 30px; height: 30px">
+                <a href="#">
+                  <img src="../../assets/img/icon/ic_instagram.svg" alt="" />
+                </a>
+              </li>
+              <li style="width: 30px; height: 30px">
+                <a href="#">
+                  <img src="../../assets/img/icon/ic_pinterest.svg" alt="" />
+                </a>
+              </li>
+              <li style="width: 30px; height: 30px">
+                <a href="#">
+                  <img src="../../assets/img/icon/ic_ytb.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+
+            <div class="hotline">
+              <a href="#"> HOTLINE: 0246 662 3434 </a>
+            </div>
+          </div>
+
+          <!-- center footer -->
+          <div class="center-footer d-flex">
+            <div class="left-center-ft item-center-ft">
+              <p class="title-footer">Giới thiệu</p>
+              <ul>
+                <li>
+                  <a href="#"> Về IVY moda </a>
+                </li>
+                <li>
+                  <a href="#"> Tuyển dụng </a>
+                </li>
+                <li>
+                  <a href="#"> Hệ thống cửa hàng </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="main-center-ft item-center-ft">
+              <p class="title-footer">Dịch vụ khách hàng</p>
+              <ul>
+                <li>
+                  <a href="#">Chính sách điều khoản</a>
+                </li>
+                <li>
+                  <a href="#">Hướng dẫn mua hàng</a>
+                </li>
+                <li>
+                  <a href="#">Chính sách thanh toán</a>
+                </li>
+                <li>
+                  <a href="#">Chính sách đổi trả</a>
+                </li>
+                <li>
+                  <a href="#">Chính sách bảo hành</a>
+                </li>
+                <li>
+                  <a href="#">Chính sách giao nhận vận chuyển</a>
+                </li>
+                <li>
+                  <a href="#">Chính sách thẻ thành viên</a>
+                </li>
+                <li>
+                  <a href="#">Hệ thống cửa hàng</a>
+                </li>
+                <li>
+                  <a href="#">Q&amp;A</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="right-center-ft item-center-ft">
+              <p class="title-footer">Liên hệ</p>
+              <ul>
+                <li>
+                  <a href="#">Hotline</a>
+                </li>
+                <li>
+                  <a href="#">Email</a>
+                </li>
+                <li>
+                  <a href="#">Live Chat</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">Messenger</a>
+                </li>
+                <li>
+                  <a href="#">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- right footer -->
+          <div class="right-footer">
+            <div class="register-form">
+              <p class="title-footer">Nhận thông tin các chương trình của IVY moda</p>
+
+              <form action="" id="frm_subscribe">
+                <input
+                  id="email_subscribe"
+                  type="text"
+                  name="email"
+                  placeholder="Nhập địa chỉ email"
+                  required="required"
+                />
+                <div class="btn-submit">
+                  <input id="btn-submit" class="form-submit" value="Đăng ký" type="submit" />
+                </div>
+              </form>
+            </div>
+
+            <div class="info-right-ft">
+              <p class="title-footer">Download App</p>
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="../../assets/img/logo/appstore.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../../assets/img/logo/googleplay.png" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- site footer -->
     <footer id="footer" class="site-footer">
-        <div class="container">
-            <div class="copy-right">©IVYmoda All rights reserved</div>
-        </div>
+      <div class="container">
+        <div class="copy-right">©IVYmoda All rights reserved</div>
+      </div>
     </footer>
-    <script src="../../main.js" ></script>
+    <script src="../../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.js"></script>
     <script type="module">
-        const swiperPro = new Swiper(".product-swiper", {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            loop: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            // navigation: {
-            //     nextEl: '.swiper-button-next-1',
-            //     prevEl: '.swiper-button-prev-1',
-            // },
-        });
+      const swiperPro = new Swiper(".product-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        // navigation: {
+        //     nextEl: '.swiper-button-next-1',
+        //     prevEl: '.swiper-button-prev-1',
+        // },
+      });
 
-        var swiper = new Swiper('.mySwiper', {
-            // Optional parameters
-            slidesPerView: 5,
-            spaceBetween: 30,
+      var swiper = new Swiper(".mySwiper", {
+        // Optional parameters
+        slidesPerView: 5,
+        spaceBetween: 30,
 
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            }
-        });
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
-
-</body>
+  </body>
 </html>
